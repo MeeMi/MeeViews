@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA6CFC71CC513560027D264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFC61CC513560027D264 /* main.m */; };
+		9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD11CC513560027D264 /* Assets.xcassets */; };
+		9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */; };
+		9CA6CFE01CC513560027D264 /* MeeViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFDF1CC513560027D264 /* MeeViewsTests.m */; };
+		9CA6CFEB1CC513560027D264 /* MeeViewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFEA1CC513560027D264 /* MeeViewsUITests.m */; };
+		9CA6CFFF1CC513F50027D264 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFFB1CC513F50027D264 /* AppDelegate.m */; };
+		9CA6D0031CC5146B0027D264 /* MeeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D0021CC5146B0027D264 /* MeeNavigationController.m */; };
+		9CA6D0061CC5149E0027D264 /* MeeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D0051CC5149E0027D264 /* MeeTabBarController.m */; };
+		9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D0081CC5161B0027D264 /* MeeVC1.m */; };
+		9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D00B1CC516370027D264 /* MeeVC2.m */; };
+		9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6D00C1CC516370027D264 /* MeeVC2.xib */; };
+		9CA6D0111CC5164D0027D264 /* MeeVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D0101CC5164D0027D264 /* MeeVC3.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CA6CFDC1CC513560027D264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA6CFBA1CC513560027D264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA6CFC11CC513560027D264;
+			remoteInfo = MeeViews;
+		};
+		9CA6CFE71CC513560027D264 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA6CFBA1CC513560027D264 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA6CFC11CC513560027D264;
+			remoteInfo = MeeViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CA6CFC21CC513560027D264 /* MeeViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeeViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA6CFC61CC513560027D264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CA6CFD11CC513560027D264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA6CFD41CC513560027D264 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CA6CFD61CC513560027D264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA6CFDB1CC513560027D264 /* MeeViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeeViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA6CFDF1CC513560027D264 /* MeeViewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeeViewsTests.m; sourceTree = "<group>"; };
+		9CA6CFE11CC513560027D264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA6CFE61CC513560027D264 /* MeeViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeeViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA6CFEA1CC513560027D264 /* MeeViewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeeViewsUITests.m; sourceTree = "<group>"; };
+		9CA6CFEC1CC513560027D264 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA6CFFA1CC513F50027D264 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CA6CFFB1CC513F50027D264 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CA6D0011CC5146B0027D264 /* MeeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeNavigationController.h; sourceTree = "<group>"; };
+		9CA6D0021CC5146B0027D264 /* MeeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeNavigationController.m; sourceTree = "<group>"; };
+		9CA6D0041CC5149E0027D264 /* MeeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeTabBarController.h; sourceTree = "<group>"; };
+		9CA6D0051CC5149E0027D264 /* MeeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeTabBarController.m; sourceTree = "<group>"; };
+		9CA6D0071CC5161B0027D264 /* MeeVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeVC1.h; sourceTree = "<group>"; };
+		9CA6D0081CC5161B0027D264 /* MeeVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeVC1.m; sourceTree = "<group>"; };
+		9CA6D00A1CC516370027D264 /* MeeVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeVC2.h; sourceTree = "<group>"; };
+		9CA6D00B1CC516370027D264 /* MeeVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeVC2.m; sourceTree = "<group>"; };
+		9CA6D00C1CC516370027D264 /* MeeVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeVC2.xib; sourceTree = "<group>"; };
+		9CA6D00F1CC5164D0027D264 /* MeeVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeVC3.h; sourceTree = "<group>"; };
+		9CA6D0101CC5164D0027D264 /* MeeVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeVC3.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA6CFBF1CC513560027D264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA6CFD81CC513560027D264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA6CFE31CC513560027D264 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA6CFB91CC513560027D264 = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFC41CC513560027D264 /* MeeViews */,
+				9CA6CFDE1CC513560027D264 /* MeeViewsTests */,
+				9CA6CFE91CC513560027D264 /* MeeViewsUITests */,
+				9CA6CFC31CC513560027D264 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA6CFC31CC513560027D264 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFC21CC513560027D264 /* MeeViews.app */,
+				9CA6CFDB1CC513560027D264 /* MeeViewsTests.xctest */,
+				9CA6CFE61CC513560027D264 /* MeeViewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA6CFC41CC513560027D264 /* MeeViews */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFF81CC513F50027D264 /* Classes */,
+				9CA6CFC51CC513560027D264 /* Supporting Files */,
+			);
+			path = MeeViews;
+			sourceTree = "<group>";
+		};
+		9CA6CFC51CC513560027D264 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFD11CC513560027D264 /* Assets.xcassets */,
+				9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */,
+				9CA6CFD61CC513560027D264 /* Info.plist */,
+				9CA6CFC61CC513560027D264 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CA6CFDE1CC513560027D264 /* MeeViewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFDF1CC513560027D264 /* MeeViewsTests.m */,
+				9CA6CFE11CC513560027D264 /* Info.plist */,
+			);
+			path = MeeViewsTests;
+			sourceTree = "<group>";
+		};
+		9CA6CFE91CC513560027D264 /* MeeViewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFEA1CC513560027D264 /* MeeViewsUITests.m */,
+				9CA6CFEC1CC513560027D264 /* Info.plist */,
+			);
+			path = MeeViewsUITests;
+			sourceTree = "<group>";
+		};
+		9CA6CFF81CC513F50027D264 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFF91CC513F50027D264 /* Other */,
+				9CA6D0001CC514280027D264 /* Main */,
+				9CA6CFFC1CC513F50027D264 /* VC1 */,
+				9CA6CFFD1CC513F50027D264 /* VC2 */,
+				9CA6CFFE1CC513F50027D264 /* VC3 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9CA6CFF91CC513F50027D264 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6CFFA1CC513F50027D264 /* AppDelegate.h */,
+				9CA6CFFB1CC513F50027D264 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		9CA6CFFC1CC513F50027D264 /* VC1 */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6D0071CC5161B0027D264 /* MeeVC1.h */,
+				9CA6D0081CC5161B0027D264 /* MeeVC1.m */,
+			);
+			path = VC1;
+			sourceTree = "<group>";
+		};
+		9CA6CFFD1CC513F50027D264 /* VC2 */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6D00A1CC516370027D264 /* MeeVC2.h */,
+				9CA6D00B1CC516370027D264 /* MeeVC2.m */,
+				9CA6D00C1CC516370027D264 /* MeeVC2.xib */,
+			);
+			path = VC2;
+			sourceTree = "<group>";
+		};
+		9CA6CFFE1CC513F50027D264 /* VC3 */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6D00F1CC5164D0027D264 /* MeeVC3.h */,
+				9CA6D0101CC5164D0027D264 /* MeeVC3.m */,
+			);
+			path = VC3;
+			sourceTree = "<group>";
+		};
+		9CA6D0001CC514280027D264 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CA6D0011CC5146B0027D264 /* MeeNavigationController.h */,
+				9CA6D0021CC5146B0027D264 /* MeeNavigationController.m */,
+				9CA6D0041CC5149E0027D264 /* MeeTabBarController.h */,
+				9CA6D0051CC5149E0027D264 /* MeeTabBarController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA6CFC11CC513560027D264 /* MeeViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA6CFEF1CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViews" */;
+			buildPhases = (
+				9CA6CFBE1CC513560027D264 /* Sources */,
+				9CA6CFBF1CC513560027D264 /* Frameworks */,
+				9CA6CFC01CC513560027D264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeeViews;
+			productName = MeeViews;
+			productReference = 9CA6CFC21CC513560027D264 /* MeeViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CA6CFDA1CC513560027D264 /* MeeViewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA6CFF21CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViewsTests" */;
+			buildPhases = (
+				9CA6CFD71CC513560027D264 /* Sources */,
+				9CA6CFD81CC513560027D264 /* Frameworks */,
+				9CA6CFD91CC513560027D264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA6CFDD1CC513560027D264 /* PBXTargetDependency */,
+			);
+			name = MeeViewsTests;
+			productName = MeeViewsTests;
+			productReference = 9CA6CFDB1CC513560027D264 /* MeeViewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CA6CFE51CC513560027D264 /* MeeViewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA6CFF51CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViewsUITests" */;
+			buildPhases = (
+				9CA6CFE21CC513560027D264 /* Sources */,
+				9CA6CFE31CC513560027D264 /* Frameworks */,
+				9CA6CFE41CC513560027D264 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA6CFE81CC513560027D264 /* PBXTargetDependency */,
+			);
+			name = MeeViewsUITests;
+			productName = MeeViewsUITests;
+			productReference = 9CA6CFE61CC513560027D264 /* MeeViewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA6CFBA1CC513560027D264 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Mee;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Mee;
+				TargetAttributes = {
+					9CA6CFC11CC513560027D264 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					9CA6CFDA1CC513560027D264 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9CA6CFC11CC513560027D264;
+					};
+					9CA6CFE51CC513560027D264 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 9CA6CFC11CC513560027D264;
+					};
+				};
+			};
+			buildConfigurationList = 9CA6CFBD1CC513560027D264 /* Build configuration list for PBXProject "MeeViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CA6CFB91CC513560027D264;
+			productRefGroup = 9CA6CFC31CC513560027D264 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA6CFC11CC513560027D264 /* MeeViews */,
+				9CA6CFDA1CC513560027D264 /* MeeViewsTests */,
+				9CA6CFE51CC513560027D264 /* MeeViewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA6CFC01CC513560027D264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */,
+				9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */,
+				9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA6CFD91CC513560027D264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA6CFE41CC513560027D264 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA6CFBE1CC513560027D264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA6D0061CC5149E0027D264 /* MeeTabBarController.m in Sources */,
+				9CA6CFFF1CC513F50027D264 /* AppDelegate.m in Sources */,
+				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
+				9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */,
+				9CA6CFC71CC513560027D264 /* main.m in Sources */,
+				9CA6D0111CC5164D0027D264 /* MeeVC3.m in Sources */,
+				9CA6D0031CC5146B0027D264 /* MeeNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA6CFD71CC513560027D264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA6CFE01CC513560027D264 /* MeeViewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA6CFE21CC513560027D264 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA6CFEB1CC513560027D264 /* MeeViewsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CA6CFDD1CC513560027D264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA6CFC11CC513560027D264 /* MeeViews */;
+			targetProxy = 9CA6CFDC1CC513560027D264 /* PBXContainerItemProxy */;
+		};
+		9CA6CFE81CC513560027D264 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA6CFC11CC513560027D264 /* MeeViews */;
+			targetProxy = 9CA6CFE71CC513560027D264 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA6CFD41CC513560027D264 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CA6CFED1CC513560027D264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9CA6CFEE1CC513560027D264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA6CFF01CC513560027D264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeeViews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CA6CFF11CC513560027D264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MeeViews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CA6CFF31CC513560027D264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeeViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeeViews.app/MeeViews";
+			};
+			name = Debug;
+		};
+		9CA6CFF41CC513560027D264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MeeViewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeeViews.app/MeeViews";
+			};
+			name = Release;
+		};
+		9CA6CFF61CC513560027D264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeeViewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MeeViews;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9CA6CFF71CC513560027D264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MeeViewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MeeViews;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA6CFBD1CC513560027D264 /* Build configuration list for PBXProject "MeeViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA6CFED1CC513560027D264 /* Debug */,
+				9CA6CFEE1CC513560027D264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA6CFEF1CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA6CFF01CC513560027D264 /* Debug */,
+				9CA6CFF11CC513560027D264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CA6CFF21CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA6CFF31CC513560027D264 /* Debug */,
+				9CA6CFF41CC513560027D264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CA6CFF51CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA6CFF61CC513560027D264 /* Debug */,
+				9CA6CFF71CC513560027D264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA6CFBA1CC513560027D264 /* Project object */;
+}
