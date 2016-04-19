@@ -24,7 +24,7 @@
     MeeTabBarController *tabVc = [[MeeTabBarController alloc]init];
     self.window.rootViewController = tabVc;
     // 3.显示窗口
-    [self.window makeKeyWindow];
+    [self.window makeKeyAndVisible];
     
     
     
