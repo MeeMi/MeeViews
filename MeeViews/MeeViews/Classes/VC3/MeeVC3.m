@@ -70,7 +70,7 @@ static NSString *const cellID = @"collectionCell";
 {
     MeeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
      cell.imageNameStr = @"ermilio";  
-//     cell.imageNameStr = @"we.jpg";
+//    cell.imageNameStr = @"we.jpg";
 //    cell.imageNameStr = @"we";
 //    cell.imageNameStr = @"icon_person";
     cell.backgroundColor = MeeRandomColor;

@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "MeeTabBarController.h"
+//#import "MeeTabBarController.h"
+#import "MeeLaunchViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,12 @@
     // 1.创建窗口
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     // 2.设置根控制器
-    MeeTabBarController *tabVc = [[MeeTabBarController alloc]init];
-    self.window.rootViewController = tabVc;
+//     MeeTabBarController *tabVc = [[MeeTabBarController alloc]init];
+//     self.window.rootViewController = tabVc;
+    
+    
+    MeeLaunchViewController *meeLaunchVc = [[MeeLaunchViewController alloc]init];
+    self.window.rootViewController = meeLaunchVc;
     // 3.显示窗口
     [self.window makeKeyAndVisible];
     

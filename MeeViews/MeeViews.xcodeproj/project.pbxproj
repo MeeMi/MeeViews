@@ -16,6 +16,8 @@
 		9C6532AB1CC7506400B609C5 /* we.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532AA1CC7506400B609C5 /* we.jpg */; };
 		9C6532AE1CC7531F00B609C5 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532AD1CC7531F00B609C5 /* NSData+ImageContentType.m */; };
 		9C6532B01CC7584000B609C5 /* icon_person.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532AF1CC7584000B609C5 /* icon_person.png */; };
+		9C6532B41CC76EFC00B609C5 /* MeeLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532B31CC76EFC00B609C5 /* MeeLaunchViewController.m */; };
+		9C6532B61CC76F9400B609C5 /* iPhone-6-Crop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532B51CC76F9400B609C5 /* iPhone-6-Crop.gif */; };
 		9CA6CFC71CC513560027D264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFC61CC513560027D264 /* main.m */; };
 		9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD11CC513560027D264 /* Assets.xcassets */; };
 		9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */; };
@@ -63,6 +65,9 @@
 		9C6532AC1CC7531F00B609C5 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		9C6532AD1CC7531F00B609C5 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		9C6532AF1CC7584000B609C5 /* icon_person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_person.png; sourceTree = "<group>"; };
+		9C6532B21CC76EFC00B609C5 /* MeeLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeLaunchViewController.h; sourceTree = "<group>"; };
+		9C6532B31CC76EFC00B609C5 /* MeeLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeLaunchViewController.m; sourceTree = "<group>"; };
+		9C6532B51CC76F9400B609C5 /* iPhone-6-Crop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "iPhone-6-Crop.gif"; sourceTree = "<group>"; };
 		9CA6CFC21CC513560027D264 /* MeeViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeeViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA6CFC61CC513560027D264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CA6CFD11CC513560027D264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +151,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		9C6532B11CC76ECD00B609C5 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				9C6532B21CC76EFC00B609C5 /* MeeLaunchViewController.h */,
+				9C6532B31CC76EFC00B609C5 /* MeeLaunchViewController.m */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		9CA6CFB91CC513560027D264 = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +194,7 @@
 			children = (
 				9C65328E1CC7180800B609C5 /* Category */,
 				9CA6CFD11CC513560027D264 /* Assets.xcassets */,
+				9C6532B51CC76F9400B609C5 /* iPhone-6-Crop.gif */,
 				9C6532AF1CC7584000B609C5 /* icon_person.png */,
 				9C6532AA1CC7506400B609C5 /* we.jpg */,
 				9C6532A81CC7501200B609C5 /* joy.gif */,
@@ -213,6 +228,7 @@
 		9CA6CFF81CC513F50027D264 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9C6532B11CC76ECD00B609C5 /* Launch */,
 				9CA6CFF91CC513F50027D264 /* Other */,
 				9CA6D0001CC514280027D264 /* Main */,
 				9CA6CFFC1CC513F50027D264 /* VC1 */,
@@ -381,6 +397,7 @@
 				9C6532A91CC7501200B609C5 /* joy.gif in Resources */,
 				9C6532B01CC7584000B609C5 /* icon_person.png in Resources */,
 				9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */,
+				9C6532B61CC76F9400B609C5 /* iPhone-6-Crop.gif in Resources */,
 				9C6532AB1CC7506400B609C5 /* we.jpg in Resources */,
 				9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */,
 				9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */,
@@ -409,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */,
+				9C6532B41CC76EFC00B609C5 /* MeeLaunchViewController.m in Sources */,
 				9CA6D0061CC5149E0027D264 /* MeeTabBarController.m in Sources */,
 				9CA6CFFF1CC513F50027D264 /* AppDelegate.m in Sources */,
 				9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */,
@@ -550,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = MeeViews/PrefixHeader.pch;
 				INFOPLIST_FILE = MeeViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -562,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = MeeViews/PrefixHeader.pch;
 				INFOPLIST_FILE = MeeViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
