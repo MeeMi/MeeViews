@@ -30,16 +30,17 @@
     scrollView.frame = self.view.bounds;
     scrollView.contentSize = CGSizeMake(0, 1200);
     scrollView.backgroundColor = [UIColor colorWithRed:0.23 green:0.56 blue:0.62 alpha:1.00];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:scrollView];
     
     
     // 设置轮播器 图片数据
     // 情景一：采用本地图片实现
-    NSArray *imageNames = @[@"h1.jpg",
-                            @"h2.jpg",
-                            @"h3.jpg",
-                            @"h4.jpg",
-                            @"h7" // 本地图片请填写全名
+    NSArray *imageNames = @[@"0.jpg",
+                            @"1.jpg",
+                            @"2.jpg",
+                            @"3.jpg",
+                            @"4.jpg" // 本地图片请填写全名
                             ];
     
     // 情景二：采用网络图片实现
@@ -58,7 +59,7 @@
     
     
      // 本地加载 图片数据的轮播器
-    SDCycleScrollView *cycleScrollView1 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, MeeScreenW, 180) imageNamesGroup:imageNames];
+    SDCycleScrollView *cycleScrollView1 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, MeeScreenW, 240) imageNamesGroup:imageNames];
     cycleScrollView1.delegate = self;
     //设置轮播器图片滚动方向
     cycleScrollView1.scrollDirection = UICollectionViewScrollDirectionHorizontal;

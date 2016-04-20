@@ -63,17 +63,23 @@ static NSString *const cellID = @"collectionCell";
 #pragma mark - UICollectionViewDataSource
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 12;
+    return 15;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     MeeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
-     cell.imageNameStr = @"ermilio";  
-//    cell.imageNameStr = @"we.jpg";
-//    cell.imageNameStr = @"we";
-//    cell.imageNameStr = @"icon_person";
-    cell.backgroundColor = MeeRandomColor;
+    if(indexPath.row == 0){
+        cell.imageNameStr = @"ermilio";
+        //    cell.imageNameStr = @"we.jpg";
+        //    cell.imageNameStr = @"we";
+        //    cell.imageNameStr = @"icon_person";
+    }else{
+        cell.imageNameStr = [NSString stringWithFormat:@"%zd",indexPath.row];
+    }
+
+    
+    cell.backgroundColor = [UIColor colorWithRed:0.99 green:0.83 blue:0.91 alpha:1.00];
     return cell;
 }
 

@@ -71,6 +71,7 @@
 {
     UIImageView *imageView = [[UIImageView alloc] init];
     _imageView = imageView;
+
     [self.contentView addSubview:imageView];
 }
 
@@ -94,7 +95,8 @@
     [super layoutSubviews];
     
     _imageView.frame = self.bounds;
-    
+    // 设置图片的内容显示的形式
+    _imageView.contentMode = UIViewContentModeScaleAspectFill;
     CGFloat titleLabelW = self.sd_width;
     CGFloat titleLabelH = _titleLabelHeight;
     CGFloat titleLabelX = 0;

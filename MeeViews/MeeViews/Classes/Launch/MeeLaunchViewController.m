@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = MeeRandomColor;
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIImageView *imageView = nil;
     if (self.view.bounds.size.width == 414.0) {
