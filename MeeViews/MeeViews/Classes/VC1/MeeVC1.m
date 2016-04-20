@@ -8,6 +8,8 @@
 
 #import "MeeVC1.h"
 
+#import "MeePicViewController.h"
+
 @interface MeeVC1 ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)  NSArray  * titles;
@@ -22,7 +24,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.31 green:0.52 blue:0.34 alpha:1.00];
     
     self.titles = @[@"功能1" , @"功能2" , @"功能3"];
-    self.subTitles = @[@"详细1",@"详细2",@"详细3"];
+    self.subTitles = @[@"图片轮播器",@"详细2",@"详细3"];
     
     [self setupTableView];
 }
@@ -34,6 +36,8 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.backgroundColor = [UIColor colorWithRed:0.40 green:0.78 blue:0.94 alpha:1.00];
+    
+    tableView.tableFooterView = [[UIView alloc]init];
     [self.view addSubview:tableView];
 }
 
@@ -65,6 +69,8 @@
     switch (indexPath.row) {
         case 0:{
             NSLog(@"选中 0 ");
+            MeePicViewController *vc = [[MeePicViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
              break;
         }
         case 1:{

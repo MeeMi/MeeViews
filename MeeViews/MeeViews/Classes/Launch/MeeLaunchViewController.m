@@ -36,15 +36,15 @@
     
     
     [UIView animateWithDuration:0.3 delay:1.6 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-        imageView.alpha = 0;
+        imageView.alpha = 0.001;
     } completion:^(BOOL finished) {
-            
+        
             // 设置转场动画
             CATransition *anim = [CATransition animation];
             // 动画类型
             anim.type = @"rippleEffect";  // 水滴效果
             // 转场时间
-            anim.duration = 3;
+            anim.duration = 1.5;
             // 添加转场动画
             [self.view.window.layer addAnimation:anim forKey:nil];
             
