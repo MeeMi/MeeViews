@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */; };
+		9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532901CC7180F00B609C5 /* UIView+Frame.m */; };
+		9C6532961CC71C3000B609C5 /* MeeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532951CC71C3000B609C5 /* MeeCollectionViewCell.m */; };
+		9C65329A1CC7336800B609C5 /* ermilio.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532991CC7336800B609C5 /* ermilio.gif */; };
+		9C6532A61CC74B4C00B609C5 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532A51CC74B4C00B609C5 /* UIImage+GIF.m */; };
+		9C6532A91CC7501200B609C5 /* joy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532A81CC7501200B609C5 /* joy.gif */; };
+		9C6532AB1CC7506400B609C5 /* we.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532AA1CC7506400B609C5 /* we.jpg */; };
+		9C6532AE1CC7531F00B609C5 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532AD1CC7531F00B609C5 /* NSData+ImageContentType.m */; };
+		9C6532B01CC7584000B609C5 /* icon_person.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C6532AF1CC7584000B609C5 /* icon_person.png */; };
 		9CA6CFC71CC513560027D264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFC61CC513560027D264 /* main.m */; };
 		9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD11CC513560027D264 /* Assets.xcassets */; };
 		9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */; };
@@ -39,6 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C65328B1CC713C800B609C5 /* MeeCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeCollectionViewLayout.h; sourceTree = "<group>"; };
+		9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeCollectionViewLayout.m; sourceTree = "<group>"; };
+		9C65328F1CC7180F00B609C5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		9C6532901CC7180F00B609C5 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		9C6532921CC7183A00B609C5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9C6532941CC71C3000B609C5 /* MeeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeCollectionViewCell.h; sourceTree = "<group>"; };
+		9C6532951CC71C3000B609C5 /* MeeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeCollectionViewCell.m; sourceTree = "<group>"; };
+		9C6532991CC7336800B609C5 /* ermilio.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ermilio.gif; sourceTree = "<group>"; };
+		9C6532A41CC74B4C00B609C5 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		9C6532A51CC74B4C00B609C5 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		9C6532A81CC7501200B609C5 /* joy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joy.gif; sourceTree = "<group>"; };
+		9C6532AA1CC7506400B609C5 /* we.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = we.jpg; sourceTree = "<group>"; };
+		9C6532AC1CC7531F00B609C5 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		9C6532AD1CC7531F00B609C5 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		9C6532AF1CC7584000B609C5 /* icon_person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_person.png; sourceTree = "<group>"; };
 		9CA6CFC21CC513560027D264 /* MeeViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeeViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA6CFC61CC513560027D264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CA6CFD11CC513560027D264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +114,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C65328A1CC7139100B609C5 /* CollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9C65328B1CC713C800B609C5 /* MeeCollectionViewLayout.h */,
+				9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */,
+			);
+			name = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		9C65328E1CC7180800B609C5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9C65328F1CC7180F00B609C5 /* UIView+Frame.h */,
+				9C6532901CC7180F00B609C5 /* UIView+Frame.m */,
+				9C6532A41CC74B4C00B609C5 /* UIImage+GIF.h */,
+				9C6532A51CC74B4C00B609C5 /* UIImage+GIF.m */,
+				9C6532AC1CC7531F00B609C5 /* NSData+ImageContentType.h */,
+				9C6532AD1CC7531F00B609C5 /* NSData+ImageContentType.m */,
+			);
+			name = Category;
+			path = Classes/Category;
+			sourceTree = "<group>";
+		};
+		9C6532931CC71BF200B609C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C6532941CC71C3000B609C5 /* MeeCollectionViewCell.h */,
+				9C6532951CC71C3000B609C5 /* MeeCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		9CA6CFB91CC513560027D264 = {
 			isa = PBXGroup;
 			children = (
@@ -122,10 +178,16 @@
 		9CA6CFC51CC513560027D264 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C65328E1CC7180800B609C5 /* Category */,
 				9CA6CFD11CC513560027D264 /* Assets.xcassets */,
+				9C6532AF1CC7584000B609C5 /* icon_person.png */,
+				9C6532AA1CC7506400B609C5 /* we.jpg */,
+				9C6532A81CC7501200B609C5 /* joy.gif */,
+				9C6532991CC7336800B609C5 /* ermilio.gif */,
 				9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */,
 				9CA6CFD61CC513560027D264 /* Info.plist */,
 				9CA6CFC61CC513560027D264 /* main.m */,
+				9C6532921CC7183A00B609C5 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,7 +217,7 @@
 				9CA6D0001CC514280027D264 /* Main */,
 				9CA6CFFC1CC513F50027D264 /* VC1 */,
 				9CA6CFFD1CC513F50027D264 /* VC2 */,
-				9CA6CFFE1CC513F50027D264 /* VC3 */,
+				9CA6CFFE1CC513F50027D264 /* VC3 - collectionView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -188,12 +250,15 @@
 			path = VC2;
 			sourceTree = "<group>";
 		};
-		9CA6CFFE1CC513F50027D264 /* VC3 */ = {
+		9CA6CFFE1CC513F50027D264 /* VC3 - collectionView */ = {
 			isa = PBXGroup;
 			children = (
+				9C6532931CC71BF200B609C5 /* View */,
+				9C65328A1CC7139100B609C5 /* CollectionViewLayout */,
 				9CA6D00F1CC5164D0027D264 /* MeeVC3.h */,
 				9CA6D0101CC5164D0027D264 /* MeeVC3.m */,
 			);
+			name = "VC3 - collectionView";
 			path = VC3;
 			sourceTree = "<group>";
 		};
@@ -312,7 +377,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C65329A1CC7336800B609C5 /* ermilio.gif in Resources */,
+				9C6532A91CC7501200B609C5 /* joy.gif in Resources */,
+				9C6532B01CC7584000B609C5 /* icon_person.png in Resources */,
 				9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */,
+				9C6532AB1CC7506400B609C5 /* we.jpg in Resources */,
 				9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */,
 				9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */,
 			);
@@ -339,12 +408,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */,
 				9CA6D0061CC5149E0027D264 /* MeeTabBarController.m in Sources */,
 				9CA6CFFF1CC513F50027D264 /* AppDelegate.m in Sources */,
+				9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */,
+				9C6532961CC71C3000B609C5 /* MeeCollectionViewCell.m in Sources */,
 				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
 				9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */,
+				9C6532A61CC74B4C00B609C5 /* UIImage+GIF.m in Sources */,
 				9CA6CFC71CC513560027D264 /* main.m in Sources */,
 				9CA6D0111CC5164D0027D264 /* MeeVC3.m in Sources */,
+				9C6532AE1CC7531F00B609C5 /* NSData+ImageContentType.m in Sources */,
 				9CA6D0031CC5146B0027D264 /* MeeNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MeeViews/PrefixHeader.pch;
 				INFOPLIST_FILE = MeeViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViews;
@@ -487,6 +562,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MeeViews/PrefixHeader.pch;
 				INFOPLIST_FILE = MeeViews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mee.MeeViews;
@@ -561,6 +637,7 @@
 				9CA6CFF11CC513560027D264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CA6CFF21CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +646,7 @@
 				9CA6CFF41CC513560027D264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CA6CFF51CC513560027D264 /* Build configuration list for PBXNativeTarget "MeeViewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -577,6 +655,7 @@
 				9CA6CFF71CC513560027D264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
