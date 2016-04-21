@@ -54,6 +54,11 @@
 		9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D00B1CC516370027D264 /* MeeVC2.m */; };
 		9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6D00C1CC516370027D264 /* MeeVC2.xib */; };
 		9CA6D0111CC5164D0027D264 /* MeeVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D0101CC5164D0027D264 /* MeeVC3.m */; };
+		9CBB13891CC8A6A900648B85 /* MeePhtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */; };
+		9CBB13951CC8B6AA00648B85 /* MeePhoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13931CC8B6AA00648B85 /* MeePhoTableViewCell.m */; };
+		9CBB13961CC8B6AA00648B85 /* MeePhoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB13941CC8B6AA00648B85 /* MeePhoTableViewCell.xib */; };
+		9CBB139A1CC8C54E00648B85 /* MeePhoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13991CC8C54E00648B85 /* MeePhoCollectionViewController.m */; };
+		9CBB139E1CC8D97D00648B85 /* MeePhtViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB139D1CC8D97D00648B85 /* MeePhtViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +170,14 @@
 		9CA6D00C1CC516370027D264 /* MeeVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeVC2.xib; sourceTree = "<group>"; };
 		9CA6D00F1CC5164D0027D264 /* MeeVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeVC3.h; sourceTree = "<group>"; };
 		9CA6D0101CC5164D0027D264 /* MeeVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeVC3.m; sourceTree = "<group>"; };
+		9CBB13861CC8A6A900648B85 /* MeePhtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhtViewController.h; sourceTree = "<group>"; };
+		9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeePhtViewController.m; sourceTree = "<group>"; };
+		9CBB13921CC8B6AA00648B85 /* MeePhoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhoTableViewCell.h; sourceTree = "<group>"; };
+		9CBB13931CC8B6AA00648B85 /* MeePhoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeePhoTableViewCell.m; sourceTree = "<group>"; };
+		9CBB13941CC8B6AA00648B85 /* MeePhoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeePhoTableViewCell.xib; sourceTree = "<group>"; };
+		9CBB13981CC8C54E00648B85 /* MeePhoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhoCollectionViewController.h; sourceTree = "<group>"; };
+		9CBB13991CC8C54E00648B85 /* MeePhoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeePhoCollectionViewController.m; sourceTree = "<group>"; };
+		9CBB139D1CC8D97D00648B85 /* MeePhtViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeePhtViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,9 +424,10 @@
 		9CA6CFFC1CC513F50027D264 /* VC1 */ = {
 			isa = PBXGroup;
 			children = (
-				9C6532B91CC77C4100B609C5 /* 图片轮播器 */,
 				9CA6D0071CC5161B0027D264 /* MeeVC1.h */,
 				9CA6D0081CC5161B0027D264 /* MeeVC1.m */,
+				9C6532B91CC77C4100B609C5 /* 图片轮播器 */,
+				9CBB13811CC8A56A00648B85 /* ContainerView使用 */,
 			);
 			path = VC1;
 			sourceTree = "<group>";
@@ -431,10 +445,10 @@
 		9CA6CFFE1CC513F50027D264 /* VC3 - collectionView */ = {
 			isa = PBXGroup;
 			children = (
-				9C6532931CC71BF200B609C5 /* View */,
-				9C65328A1CC7139100B609C5 /* CollectionViewLayout */,
 				9CA6D00F1CC5164D0027D264 /* MeeVC3.h */,
 				9CA6D0101CC5164D0027D264 /* MeeVC3.m */,
+				9C6532931CC71BF200B609C5 /* View */,
+				9C65328A1CC7139100B609C5 /* CollectionViewLayout */,
 			);
 			name = "VC3 - collectionView";
 			path = VC3;
@@ -449,6 +463,46 @@
 				9CA6D0051CC5149E0027D264 /* MeeTabBarController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9CBB13811CC8A56A00648B85 /* ContainerView使用 */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB13851CC8A6A900648B85 /* Controller */,
+				9CBB13881CC8A6A900648B85 /* View */,
+			);
+			name = "ContainerView使用";
+			path = "ContentView使用";
+			sourceTree = "<group>";
+		};
+		9CBB13851CC8A6A900648B85 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB13861CC8A6A900648B85 /* MeePhtViewController.h */,
+				9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */,
+				9CBB139D1CC8D97D00648B85 /* MeePhtViewController.storyboard */,
+				9CBB13971CC8C4EE00648B85 /* photoCollection */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9CBB13881CC8A6A900648B85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB13921CC8B6AA00648B85 /* MeePhoTableViewCell.h */,
+				9CBB13931CC8B6AA00648B85 /* MeePhoTableViewCell.m */,
+				9CBB13941CC8B6AA00648B85 /* MeePhoTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CBB13971CC8C4EE00648B85 /* photoCollection */ = {
+			isa = PBXGroup;
+			children = (
+				9CBB13981CC8C54E00648B85 /* MeePhoCollectionViewController.h */,
+				9CBB13991CC8C54E00648B85 /* MeePhoCollectionViewController.m */,
+			);
+			name = photoCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,10 +611,12 @@
 			files = (
 				9C65329A1CC7336800B609C5 /* ermilio.gif in Resources */,
 				9C6532A91CC7501200B609C5 /* joy.gif in Resources */,
+				9CBB139E1CC8D97D00648B85 /* MeePhtViewController.storyboard in Resources */,
 				9C6532B01CC7584000B609C5 /* icon_person.png in Resources */,
 				9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */,
 				9C6532B61CC76F9400B609C5 /* iPhone-6-Crop.gif in Resources */,
 				9C6532AB1CC7506400B609C5 /* we.jpg in Resources */,
+				9CBB13961CC8B6AA00648B85 /* MeePhoTableViewCell.xib in Resources */,
 				9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */,
 				9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */,
 			);
@@ -598,6 +654,7 @@
 				9C6532FA1CC7868400B609C5 /* SDWebImageCompat.m in Sources */,
 				9C6532F91CC7868400B609C5 /* SDImageCache.m in Sources */,
 				9C6533021CC7868400B609C5 /* UIImage+MultiFormat.m in Sources */,
+				9CBB13951CC8B6AA00648B85 /* MeePhoTableViewCell.m in Sources */,
 				9C6533011CC7868400B609C5 /* UIImage+GIF.m in Sources */,
 				9C6532FC1CC7868400B609C5 /* SDWebImageDownloader.m in Sources */,
 				9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */,
@@ -610,6 +667,7 @@
 				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
 				9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */,
 				9C6532FD1CC7868400B609C5 /* SDWebImageDownloaderOperation.m in Sources */,
+				9CBB139A1CC8C54E00648B85 /* MeePhoCollectionViewController.m in Sources */,
 				9C6532A61CC74B4C00B609C5 /* UIImage+GIF.m in Sources */,
 				9CA6CFC71CC513560027D264 /* main.m in Sources */,
 				9C6532FF1CC7868400B609C5 /* SDWebImagePrefetcher.m in Sources */,
@@ -620,6 +678,7 @@
 				9C6532AE1CC7531F00B609C5 /* NSData+ImageContentType.m in Sources */,
 				9C6532D01CC7843800B609C5 /* TADotView.m in Sources */,
 				9CA6D0031CC5146B0027D264 /* MeeNavigationController.m in Sources */,
+				9CBB13891CC8A6A900648B85 /* MeePhtViewController.m in Sources */,
 				9C6532D11CC7843800B609C5 /* TAPageControl.m in Sources */,
 				9C6533061CC7868400B609C5 /* UIView+WebCacheOperation.m in Sources */,
 				9C6533041CC7868400B609C5 /* UIImageView+HighlightedWebCache.m in Sources */,

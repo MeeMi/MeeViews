@@ -13,6 +13,8 @@
 #import "MeeVC2.h"
 #import "MeeVC3.h"
 
+#import "MeePhtViewController.h"
+
 @interface MeeTabBarController ()
 
 @end
@@ -44,8 +46,7 @@
 //    vc2.tabBarItem.image = [UIImage imageNamed:@"js"];
 //    [self addChildViewController:nav2];
     
-    
-    MeeVC1 *vc1 = [[MeeVC1 alloc]init];
+     MeeVC1 *vc1 = [[MeeVC1 alloc]init];
     [self setupOneChildVc:vc1 andImage:@"tab_home_icon" andTitle:@"功能列表"];
     
     MeeVC2 *vc2 = [[MeeVC2 alloc]init];

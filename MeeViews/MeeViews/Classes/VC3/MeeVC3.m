@@ -79,7 +79,7 @@ static NSString *const cellID = @"collectionCell";
     }
 
     
-    cell.backgroundColor = [UIColor colorWithRed:0.99 green:0.83 blue:0.91 alpha:1.00];
+    cell.backgroundColor = MeeRandomColor;
     return cell;
 }
 

@@ -10,6 +10,8 @@
 
 #import "MeePicViewController.h"
 
+#import "MeePhtViewController.h"
+
 @interface MeeVC1 ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)  NSArray  * titles;
@@ -75,6 +77,11 @@
         }
         case 1:{
             NSLog(@"选中 1 ");
+            // 从storyboard中加载控制器
+            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MeePhtViewController" bundle:nil];
+            // instantiateInitialViewController:加载箭头指向的控制器
+            MeePhtViewController *vc = [sb instantiateInitialViewController];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 2:{

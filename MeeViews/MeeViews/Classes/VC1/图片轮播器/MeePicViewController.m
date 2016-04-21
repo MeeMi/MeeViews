@@ -11,6 +11,9 @@
 
 @interface MeePicViewController ()<SDCycleScrollViewDelegate>
 
+@property (nonatomic, weak)  SDCycleScrollView  * cycleScrollView1;
+@property (nonatomic, weak)  SDCycleScrollView  * cycleScrollView3;
+
 @end
 
 @implementation MeePicViewController
@@ -21,6 +24,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.73 green:0.82 blue:0.71 alpha:1.00];
    
     [self setupUI];
+    
 }
 
 
@@ -45,9 +49,10 @@
     
     // 情景二：采用网络图片实现
     NSArray *imagesURLStrings = @[
-                                  @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
-                                  @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
-                                  @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
+                                  @"http://ww3.sinaimg.cn/mw1024/00654QmXjw1er0kabvl2rj31jk111n4v.jpg",
+                                  @"http://ww2.sinaimg.cn/mw1024/00654QmXjw1eqxffywbcjj31jk111av8.jpg",
+                                  @"http://ww4.sinaimg.cn/mw1024/00654QmXjw1eqxfg4lnckj31jk111x3b.jpg",
+                                  @"http://ww3.sinaimg.cn/mw1024/00654QmXjw1eqxfg31wlej31jk1117mj.jpg"
                                   ];
     
     // 情景三：图片配文字
@@ -57,7 +62,7 @@
                         @"您可以发邮件到gsdios@126.com"
                         ];
     
-    
+#pragma mark - 本地图片轮播器
      // 本地加载 图片数据的轮播器
     SDCycleScrollView *cycleScrollView1 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, MeeScreenW, 240) imageNamesGroup:imageNames];
     cycleScrollView1.delegate = self;
@@ -70,10 +75,39 @@
     // 设置轮播器 - 图片带文字
     cycleScrollView1.titlesGroup = titles;
     cycleScrollView1.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+    
+    self.cycleScrollView1 = cycleScrollView1;
+    
     [scrollView addSubview:cycleScrollView1];
     
     
+#pragma mark - 网络图片轮播器
+    // SDCycleScrollView *cycleScrollView2 = [SDCycleScrollView cycleScrollViewWithFrame:<#(CGRect)#> imageURLStringsGroup:<#(NSArray *)#>];
+    
+    SDCycleScrollView *cycleScrollView3 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 310, MeeScreenW, 180) delegate:self placeholderImage:[UIImage imageNamed:@"ermilio"]];
+    // 自定义分组控件小圆圈的颜色
+    cycleScrollView3.currentPageDotColor = [UIColor colorWithRed:0.31 green:0.76 blue:0.91 alpha:1.00];
+    // 自定义分组控件的图片
+    // cycleScrollView3.currentPageDotImage = [UIImage imageNamed:@"pageControlCurrentDot"];
+    // cycleScrollView3.pageDotImage = [UIImage imageNamed:@"pageControlDot"];
+    // 设置网络图片数据
+    cycleScrollView3.imageURLStringsGroup = imagesURLStrings;
+    // 滚动方向
+    cycleScrollView3.scrollDirection = UICollectionViewScrollDirectionVertical;
+    self.cycleScrollView3 = cycleScrollView3;
+    [scrollView addSubview:cycleScrollView3];
+    
+    /*
+     block监听点击方式
+     
+     cycleScrollView2.clickItemOperationBlock = ^(NSInteger index) {
+     NSLog(@">>>>>  %ld", (long)index);
+     };
+     
+     */
 }
+
+
 
 
 #pragma mark - SDCycleScrollViewDelegate
@@ -81,7 +115,12 @@
 /** 点击图片回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
-    NSLog(@"轮播图片 ---> %zd",index);
+    if (cycleScrollView == self.cycleScrollView1) {
+        NSLog(@"cycleScrollView1 - 轮播图片 ---> %zd",index);
+    }else{
+        NSLog(@"cycleScrollView3 - 轮播图片 ---> %zd",index);
+    }
+    
 }
 
 
