@@ -16,32 +16,38 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+// 设置控制器的布局 - 流水布局
+- (instancetype)init
+{
+    // 设置流水布局
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
+    // 设置cell的尺寸
+    layout.itemSize = CGSizeMake(120, self.collectionView.height);
+    // 每行的间距
+    layout.minimumLineSpacing = 8;
+    // 每个cell之间的间距
+    layout.minimumInteritemSpacing = 8;
+    
+    return  [self initWithCollectionViewLayout:layout];
+    
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
-}
+   }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
+
+
+
+
 
 #pragma mark <UICollectionViewDataSource>
 
