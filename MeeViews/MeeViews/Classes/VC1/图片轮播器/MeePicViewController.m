@@ -20,11 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.view.backgroundColor = [UIColor colorWithRed:0.73 green:0.82 blue:0.71 alpha:1.00];
    
     [self setupUI];
-    
+ 
 }
 
 
@@ -34,7 +34,7 @@
     scrollView.frame = self.view.bounds;
     scrollView.contentSize = CGSizeMake(0, 1200);
     scrollView.backgroundColor = [UIColor colorWithRed:0.23 green:0.56 blue:0.62 alpha:1.00];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+     self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:scrollView];
     
     

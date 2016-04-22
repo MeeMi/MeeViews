@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C14EB2B1CCA1199006E15AC /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */; };
 		9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */; };
 		9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532901CC7180F00B609C5 /* UIView+Frame.m */; };
 		9C6532961CC71C3000B609C5 /* MeeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532951CC71C3000B609C5 /* MeeCollectionViewCell.m */; };
@@ -79,6 +80,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C14EB291CCA1199006E15AC /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
 		9C65328B1CC713C800B609C5 /* MeeCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeCollectionViewLayout.h; sourceTree = "<group>"; };
 		9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeCollectionViewLayout.m; sourceTree = "<group>"; };
 		9C65328F1CC7180F00B609C5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 				9C6532901CC7180F00B609C5 /* UIView+Frame.m */,
 				9C6532A41CC74B4C00B609C5 /* UIImage+GIF.h */,
 				9C6532A51CC74B4C00B609C5 /* UIImage+GIF.m */,
+				9C14EB291CCA1199006E15AC /* UIImage+Tool.h */,
+				9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */,
 				9C6532AC1CC7531F00B609C5 /* NSData+ImageContentType.h */,
 				9C6532AD1CC7531F00B609C5 /* NSData+ImageContentType.m */,
 			);
@@ -667,6 +672,7 @@
 				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
 				9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */,
 				9C6532FD1CC7868400B609C5 /* SDWebImageDownloaderOperation.m in Sources */,
+				9C14EB2B1CCA1199006E15AC /* UIImage+Tool.m in Sources */,
 				9CBB139A1CC8C54E00648B85 /* MeePhoCollectionViewController.m in Sources */,
 				9C6532A61CC74B4C00B609C5 /* UIImage+GIF.m in Sources */,
 				9CA6CFC71CC513560027D264 /* main.m in Sources */,

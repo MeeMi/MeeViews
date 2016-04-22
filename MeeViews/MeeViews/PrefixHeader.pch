@@ -12,6 +12,7 @@
 #import "UIView+Frame.h"
 #import "UIImage+GIF.h"
 #import "NSData+ImageContentType.h"
+#import "UIImage+Tool.h"
 
 
 #define MeeScreenW [UIScreen mainScreen].bounds.size.width

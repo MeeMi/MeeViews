@@ -17,9 +17,12 @@
 
 @implementation MeePhtViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 
     
     self.automaticallyAdjustsScrollViewInsets = NO;
