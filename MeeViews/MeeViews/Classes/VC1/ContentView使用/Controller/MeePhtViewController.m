@@ -55,22 +55,5 @@
 }
 
 
-//- (void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//    // [self performSegueWithIdentifier:@"MeeCollectionIdentfier" sender:nil];
-//}
-
-//- (void)viewDidAppear:(BOOL)animated
-//{
-//    [super viewDidAppear:animated];
-//    [self performSegueWithIdentifier:@"MeeCollectionIdentfier" sender:nil];
-//}
-//
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    NSLog(@"sb ---> %@",segue.identifier);
-//}
-
 
 @end
