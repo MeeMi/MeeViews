@@ -11,7 +11,7 @@
 
 @interface MeePhoCollectionViewCell()
 
-@property (nonatomic, strong) NSArray * imageUrls; /**< 图片url */
+// @property (nonatomic, strong) NSArray * imageUrls; /**< 图片url */
 @property (nonatomic, weak) UIImageView *imageView; /**< <#注释#> */
 
 @end

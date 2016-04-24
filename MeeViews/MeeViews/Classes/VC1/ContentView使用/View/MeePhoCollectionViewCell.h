@@ -11,5 +11,6 @@
 @interface MeePhoCollectionViewCell : UICollectionViewCell
 
 @property (nonatomic, assign) NSIndexPath *indexPath; /**< NSIndexPath */
+@property (nonatomic, strong) NSArray * imageUrls;
 
 @end

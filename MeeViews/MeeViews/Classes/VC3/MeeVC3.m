@@ -10,6 +10,8 @@
 #import "MeeCollectionViewLayout.h"
 #import "MeeCollectionViewCell.h"
 
+#import "MeeShowBigPicViewController.h"
+
 @interface MeeVC3 ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @end
@@ -89,6 +91,14 @@ static NSString *const cellID = @"collectionCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"选中 --- > %zd",indexPath.item);
+    MeeShowBigPicViewController *showVc = [[MeeShowBigPicViewController alloc]init];
+    if (indexPath.row == 0) {
+        showVc.picNumOrUrlStr = @"ermilio";
+    }else{
+        showVc.picNumOrUrlStr = [NSString stringWithFormat:@"%zd.jpg",indexPath.item];
+    }
+    
+    [self presentViewController:showVc animated:YES completion:nil];
 }
 
 

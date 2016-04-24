@@ -8,7 +8,7 @@
 
 #import "MeePhoCollectionViewController.h"
 #import "MeePhoCollectionViewCell.h"
-
+#import "MeeShowBigPicViewController.h"
 
 @interface MeePhoCollectionViewController ()
 
@@ -56,15 +56,7 @@ static NSString * const reuseIdentifier = @"Cell11";
     [self.collectionView registerClass:[MeePhoCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
-
-
-
-
-
-
-
 #pragma mark <UICollectionViewDataSource>
-
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
 }
@@ -85,6 +77,12 @@ static NSString * const reuseIdentifier = @"Cell11";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"UICollectionView ----> %zd",indexPath.row);
+    MeeShowBigPicViewController *showVc = [[MeeShowBigPicViewController alloc]init];
+    //MeePhoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    MeePhoCollectionViewCell *cell = (MeePhoCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    showVc.picNumOrUrlStr = cell.imageUrls[indexPath.item];
+    [self presentViewController:showVc animated:YES completion:nil];
+
 }
 
 @end

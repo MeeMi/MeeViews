@@ -9,7 +9,7 @@
 #import "MeeShowBigPicViewController.h"
 #import "SDWebImageManager.h"
 
-@interface MeeShowBigPicViewController ()
+@interface MeeShowBigPicViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, weak) UIScrollView *scrollView; /**< <#注释#> */
 @property (nonatomic, weak) UIImageView *imageView; /**< <#注释#> */
@@ -43,6 +43,7 @@
     scrollView.frame = self.view.bounds;
     scrollView.backgroundColor = [UIColor colorWithRed:0.99 green:0.83 blue:0.91 alpha:1.00];
     self.scrollView = scrollView;
+    scrollView.delegate = self;
     [self.view addSubview:self.scrollView];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -50,31 +51,38 @@
     btn.backgroundColor = [UIColor colorWithRed:0.55 green:0.73 blue:0.95 alpha:1.00];
     [btn setTitle:@"退出" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.scrollView addSubview:btn];
+    // [self.scrollView addSubview:btn];
+    [self.view addSubview:btn];
     
     UIImageView *imageView = [[UIImageView alloc]init];
+
     self.imageView = imageView;
     [self.scrollView insertSubview:self.imageView atIndex:0];
     
-//    UIImage *image = nil;
-//    if (![self.picNumOrUrlStr hasPrefix:@"http"]) {
-//        image = [UIImage imageNamed:self.picNumOrUrlStr];
-//        if (image == nil) {
-//            self.imageView.image = [UIImage sd_animatedGIFNamed:self.picNumOrUrlStr]; // gif
-//            if (self.imageView.image == nil) { // jpg
-//                NSString *newImageName = [NSString stringWithFormat:@"%@.jpg",self.picNumOrUrlStr];
-//                self.imageView.image = [UIImage imageNamed:newImageName];
-//            }
-//        }else {
-//            self.imageView.image = [UIImage imageNamed:self.picNumOrUrlStr];  // png
-//        }
-//    }else{
-//        image = [[SDWebImageManager sharedManager].imageCache imageFromDiskCacheForKey:self.picNumOrUrlStr];
-//        
-//    }
+    UIImage *image = nil;
+    if (![self.picNumOrUrlStr hasPrefix:@"http"])
+    {
+        image = [UIImage imageNamed:self.picNumOrUrlStr];
+        if (image == nil) {
+            
+            image = [UIImage sd_animatedGIFNamed:self.picNumOrUrlStr];
+            self.imageView.image =  image;// gif
     
-//    self.imageView.image = image;
-//    [self setImageVieWFrame:image];
+            if (self.imageView.image == nil) { // jpg
+                NSString *newImageName = [NSString stringWithFormat:@"%@.jpg",self.picNumOrUrlStr];
+                image = [UIImage imageNamed:newImageName];
+                self.imageView.image = image;
+            }
+        }else {
+            self.imageView.image = [UIImage imageNamed:self.picNumOrUrlStr];  // png
+        }
+    }else{  // 网络图片
+        image = [[SDWebImageManager sharedManager].imageCache imageFromDiskCacheForKey:self.picNumOrUrlStr];
+        
+    }
+    
+    self.imageView.image = image;
+    [self setImageVieWFrame:image];
 }
 
 
@@ -85,7 +93,7 @@
     // 如果图片的高度小于屏幕的高度,就显示在屏幕的中央 (进行等比缩放)
     // 如果图片的高度大于屏幕的高度,就显示在左上角
     self.imageView.height = self.imageView.width / image.size.width * image.size.height;
-    if(image.size.height >= MeeScreenH){
+    if(self.imageView.height >= MeeScreenH){
         self.imageView.x = 0;
         self.imageView.y = 0;
         
@@ -100,45 +108,57 @@
     //[self.scrollView addSubview:self.imageView];
     
     // 设置scrollView的最大缩放和最小缩放比
-    //    if(self.topicModel.height > self.bigImageView.height){
-    //        scrollView.maximumZoomScale = self.topicModel.height / self.bigImageView.height;
-    //    }
-    //    scrollView.minimumZoomScale = 0.5;
-    
-}
-
-
-- (void)setPicNumOrUrlStr:(NSString *)picNumOrUrlStr
-{
-    _picNumOrUrlStr = picNumOrUrlStr;
-    
-    UIImage *image = nil;
-
-    
-    if (![picNumOrUrlStr hasPrefix:@"http"]) {
-        image = [UIImage imageNamed:picNumOrUrlStr];
-        if (image == nil) {
-            self.imageView.image = [UIImage sd_animatedGIFNamed:picNumOrUrlStr]; // gif
-            if (self.imageView.image == nil) { // jpg
-                NSString *newImageName = [NSString stringWithFormat:@"%@.jpg",picNumOrUrlStr];
-                self.imageView.image = [UIImage imageNamed:newImageName];
-            }
-        }else {
-            self.imageView.image = [UIImage imageNamed:picNumOrUrlStr];  // png
-        }
-    }else{
-        image = [[SDWebImageManager sharedManager].imageCache imageFromDiskCacheForKey:picNumOrUrlStr];
-        
+    if(image.size.height > self.imageView.height){
+        self.scrollView.maximumZoomScale = image.size.height / self.imageView.height;
     }
+    self.scrollView.minimumZoomScale = 0.5;
     
-    NSLog(@"xiancheng---> %@",[NSThread currentThread]);
-    
-    self.imageView.image = image;
-    [self setImageVieWFrame:image];
 }
 
 
+//- (void)setPicNumOrUrlStr:(NSString *)picNumOrUrlStr
+//{
+//    _picNumOrUrlStr = picNumOrUrlStr;
+//    
+//    UIImage *image = nil;
+//    
+//    if (![picNumOrUrlStr hasPrefix:@"http"]) {
+//        image = [UIImage imageNamed:picNumOrUrlStr];
+//        if (image == nil) {
+//            self.imageView.image = [UIImage sd_animatedGIFNamed:picNumOrUrlStr]; // gif
+//            if (self.imageView.image == nil) { // jpg
+//                NSString *newImageName = [NSString stringWithFormat:@"%@.jpg",picNumOrUrlStr];
+//                image = [UIImage sd_animatedGIFNamed:newImageName];
+//                self.imageView.image = image;
+//            }
+//        }else {
+//            self.imageView.image = [UIImage imageNamed:picNumOrUrlStr];  // png
+//        }
+//    }else{
+//        image = [[SDWebImageManager sharedManager].imageCache imageFromDiskCacheForKey:picNumOrUrlStr];
+//    }
+//    
+//    self.imageView.image = image;
+//    [self setImageVieWFrame:image];
+//}
 
+
+#pragma mark - UIScrollViewDelegate
+
+// 返回scrollView中的子控件
+// 返回要缩放的子控件
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    // 注意:scrollView中的滚动指示器也是View,不能直接获取subView获取子控件返回
+    return self.imageView;
+}
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView
+{
+    self.imageView.centerX = MeeScreenW * 0.5;
+    self.imageView.centerY = MeeScreenH * 0.5;
+    
+}
 
 
 
