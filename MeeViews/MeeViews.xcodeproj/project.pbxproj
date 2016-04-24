@@ -43,6 +43,10 @@
 		9C6533041CC7868400B609C5 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532F21CC7868400B609C5 /* UIImageView+HighlightedWebCache.m */; };
 		9C6533051CC7868400B609C5 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532F41CC7868400B609C5 /* UIImageView+WebCache.m */; };
 		9C6533061CC7868400B609C5 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532F61CC7868400B609C5 /* UIView+WebCacheOperation.m */; };
+		9C9EABDD1CCC9E2F0061754A /* MeePhtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */; };
+		9C9EABE41CCC9FFA0061754A /* MeeShowBigPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EABE01CCC9FFA0061754A /* MeeShowBigPicViewController.m */; };
+		9C9EABE61CCC9FFA0061754A /* MeeShowPicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9EABE31CCC9FFA0061754A /* MeeShowPicViewController.xib */; };
+		9C9EABE71CCCA08D0061754A /* MeeShowPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EABE21CCC9FFA0061754A /* MeeShowPicViewController.m */; };
 		9CA6CFC71CC513560027D264 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6CFC61CC513560027D264 /* main.m */; };
 		9CA6CFD21CC513560027D264 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD11CC513560027D264 /* Assets.xcassets */; };
 		9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6CFD31CC513560027D264 /* LaunchScreen.storyboard */; };
@@ -55,7 +59,8 @@
 		9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D00B1CC516370027D264 /* MeeVC2.m */; };
 		9CA6D00E1CC516370027D264 /* MeeVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA6D00C1CC516370027D264 /* MeeVC2.xib */; };
 		9CA6D0111CC5164D0027D264 /* MeeVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6D0101CC5164D0027D264 /* MeeVC3.m */; };
-		9CBB13891CC8A6A900648B85 /* MeePhtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */; };
+		9CB713C91CCB8E1D0094497A /* MeePhoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB713C81CCB8E1D0094497A /* MeePhoCollectionViewCell.m */; };
+		9CB713CC1CCB99480094497A /* MeePhoCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB713CB1CCB99480094497A /* MeePhoCollectionFlowLayout.m */; };
 		9CBB13951CC8B6AA00648B85 /* MeePhoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13931CC8B6AA00648B85 /* MeePhoTableViewCell.m */; };
 		9CBB13961CC8B6AA00648B85 /* MeePhoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CBB13941CC8B6AA00648B85 /* MeePhoTableViewCell.xib */; };
 		9CBB139A1CC8C54E00648B85 /* MeePhoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13991CC8C54E00648B85 /* MeePhoCollectionViewController.m */; };
@@ -149,6 +154,11 @@
 		9C6532F41CC7868400B609C5 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		9C6532F51CC7868400B609C5 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		9C6532F61CC7868400B609C5 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		9C9EABDF1CCC9FFA0061754A /* MeeShowBigPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeShowBigPicViewController.h; sourceTree = "<group>"; };
+		9C9EABE01CCC9FFA0061754A /* MeeShowBigPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeShowBigPicViewController.m; sourceTree = "<group>"; };
+		9C9EABE11CCC9FFA0061754A /* MeeShowPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeShowPicViewController.h; sourceTree = "<group>"; };
+		9C9EABE21CCC9FFA0061754A /* MeeShowPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeShowPicViewController.m; sourceTree = "<group>"; };
+		9C9EABE31CCC9FFA0061754A /* MeeShowPicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeShowPicViewController.xib; sourceTree = "<group>"; };
 		9CA6CFC21CC513560027D264 /* MeeViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeeViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA6CFC61CC513560027D264 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CA6CFD11CC513560027D264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +183,10 @@
 		9CA6D00C1CC516370027D264 /* MeeVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeVC2.xib; sourceTree = "<group>"; };
 		9CA6D00F1CC5164D0027D264 /* MeeVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeVC3.h; sourceTree = "<group>"; };
 		9CA6D0101CC5164D0027D264 /* MeeVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeVC3.m; sourceTree = "<group>"; };
+		9CB713C71CCB8E1D0094497A /* MeePhoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhoCollectionViewCell.h; sourceTree = "<group>"; };
+		9CB713C81CCB8E1D0094497A /* MeePhoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeePhoCollectionViewCell.m; sourceTree = "<group>"; };
+		9CB713CA1CCB99480094497A /* MeePhoCollectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhoCollectionFlowLayout.h; sourceTree = "<group>"; };
+		9CB713CB1CCB99480094497A /* MeePhoCollectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeePhoCollectionFlowLayout.m; sourceTree = "<group>"; };
 		9CBB13861CC8A6A900648B85 /* MeePhtViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhtViewController.h; sourceTree = "<group>"; };
 		9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeePhtViewController.m; sourceTree = "<group>"; };
 		9CBB13921CC8B6AA00648B85 /* MeePhoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeePhoTableViewCell.h; sourceTree = "<group>"; };
@@ -251,12 +265,13 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		9C6532B91CC77C4100B609C5 /* 图片轮播器 */ = {
+		9C6532B91CC77C4100B609C5 /* 图片轮播器 - 列表1 */ = {
 			isa = PBXGroup;
 			children = (
 				9C6532BA1CC77C7600B609C5 /* MeePicViewController.h */,
 				9C6532BB1CC77C7600B609C5 /* MeePicViewController.m */,
 			);
+			name = "图片轮播器 - 列表1";
 			path = "图片轮播器";
 			sourceTree = "<group>";
 		};
@@ -336,6 +351,18 @@
 				9C6532F61CC7868400B609C5 /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		9C9EABDE1CCC9FFA0061754A /* 显示大图 */ = {
+			isa = PBXGroup;
+			children = (
+				9C9EABDF1CCC9FFA0061754A /* MeeShowBigPicViewController.h */,
+				9C9EABE01CCC9FFA0061754A /* MeeShowBigPicViewController.m */,
+				9C9EABE11CCC9FFA0061754A /* MeeShowPicViewController.h */,
+				9C9EABE21CCC9FFA0061754A /* MeeShowPicViewController.m */,
+				9C9EABE31CCC9FFA0061754A /* MeeShowPicViewController.xib */,
+			);
+			path = "显示大图";
 			sourceTree = "<group>";
 		};
 		9CA6CFB91CC513560027D264 = {
@@ -431,8 +458,8 @@
 			children = (
 				9CA6D0071CC5161B0027D264 /* MeeVC1.h */,
 				9CA6D0081CC5161B0027D264 /* MeeVC1.m */,
-				9C6532B91CC77C4100B609C5 /* 图片轮播器 */,
-				9CBB13811CC8A56A00648B85 /* ContainerView使用 */,
+				9C6532B91CC77C4100B609C5 /* 图片轮播器 - 列表1 */,
+				9CBB13811CC8A56A00648B85 /* ContainerView使用 - 列表2 */,
 			);
 			path = VC1;
 			sourceTree = "<group>";
@@ -470,13 +497,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		9CBB13811CC8A56A00648B85 /* ContainerView使用 */ = {
+		9CBB13811CC8A56A00648B85 /* ContainerView使用 - 列表2 */ = {
 			isa = PBXGroup;
 			children = (
 				9CBB13851CC8A6A900648B85 /* Controller */,
 				9CBB13881CC8A6A900648B85 /* View */,
 			);
-			name = "ContainerView使用";
+			name = "ContainerView使用 - 列表2";
 			path = "ContentView使用";
 			sourceTree = "<group>";
 		};
@@ -486,6 +513,7 @@
 				9CBB13861CC8A6A900648B85 /* MeePhtViewController.h */,
 				9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */,
 				9CBB139D1CC8D97D00648B85 /* MeePhtViewController.storyboard */,
+				9C9EABDE1CCC9FFA0061754A /* 显示大图 */,
 				9CBB13971CC8C4EE00648B85 /* photoCollection */,
 			);
 			path = Controller;
@@ -497,6 +525,8 @@
 				9CBB13921CC8B6AA00648B85 /* MeePhoTableViewCell.h */,
 				9CBB13931CC8B6AA00648B85 /* MeePhoTableViewCell.m */,
 				9CBB13941CC8B6AA00648B85 /* MeePhoTableViewCell.xib */,
+				9CB713C71CCB8E1D0094497A /* MeePhoCollectionViewCell.h */,
+				9CB713C81CCB8E1D0094497A /* MeePhoCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,6 +536,8 @@
 			children = (
 				9CBB13981CC8C54E00648B85 /* MeePhoCollectionViewController.h */,
 				9CBB13991CC8C54E00648B85 /* MeePhoCollectionViewController.m */,
+				9CB713CA1CCB99480094497A /* MeePhoCollectionFlowLayout.h */,
+				9CB713CB1CCB99480094497A /* MeePhoCollectionFlowLayout.m */,
 			);
 			name = photoCollection;
 			sourceTree = "<group>";
@@ -617,6 +649,7 @@
 				9C65329A1CC7336800B609C5 /* ermilio.gif in Resources */,
 				9C6532A91CC7501200B609C5 /* joy.gif in Resources */,
 				9CBB139E1CC8D97D00648B85 /* MeePhtViewController.storyboard in Resources */,
+				9C9EABE61CCC9FFA0061754A /* MeeShowPicViewController.xib in Resources */,
 				9C6532B01CC7584000B609C5 /* icon_person.png in Resources */,
 				9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */,
 				9C6532B61CC76F9400B609C5 /* iPhone-6-Crop.gif in Resources */,
@@ -648,12 +681,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9EABE71CCCA08D0061754A /* MeeShowPicViewController.m in Sources */,
+				9C9EABDD1CCC9E2F0061754A /* MeePhtViewController.m in Sources */,
 				9C6532FB1CC7868400B609C5 /* SDWebImageDecoder.m in Sources */,
 				9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */,
 				9C6532F71CC7868400B609C5 /* MKAnnotationView+WebCache.m in Sources */,
 				9C6532CE1CC7843800B609C5 /* TAAbstractDotView.m in Sources */,
 				9C6532B41CC76EFC00B609C5 /* MeeLaunchViewController.m in Sources */,
 				9CA6D0061CC5149E0027D264 /* MeeTabBarController.m in Sources */,
+				9CB713C91CCB8E1D0094497A /* MeePhoCollectionViewCell.m in Sources */,
 				9CA6CFFF1CC513F50027D264 /* AppDelegate.m in Sources */,
 				9C6532BC1CC77C7600B609C5 /* MeePicViewController.m in Sources */,
 				9C6532FA1CC7868400B609C5 /* SDWebImageCompat.m in Sources */,
@@ -674,6 +710,7 @@
 				9C6532FD1CC7868400B609C5 /* SDWebImageDownloaderOperation.m in Sources */,
 				9C14EB2B1CCA1199006E15AC /* UIImage+Tool.m in Sources */,
 				9CBB139A1CC8C54E00648B85 /* MeePhoCollectionViewController.m in Sources */,
+				9CB713CC1CCB99480094497A /* MeePhoCollectionFlowLayout.m in Sources */,
 				9C6532A61CC74B4C00B609C5 /* UIImage+GIF.m in Sources */,
 				9CA6CFC71CC513560027D264 /* main.m in Sources */,
 				9C6532FF1CC7868400B609C5 /* SDWebImagePrefetcher.m in Sources */,
@@ -682,9 +719,9 @@
 				9C6532F81CC7868400B609C5 /* NSData+ImageContentType.m in Sources */,
 				9CA6D0111CC5164D0027D264 /* MeeVC3.m in Sources */,
 				9C6532AE1CC7531F00B609C5 /* NSData+ImageContentType.m in Sources */,
+				9C9EABE41CCC9FFA0061754A /* MeeShowBigPicViewController.m in Sources */,
 				9C6532D01CC7843800B609C5 /* TADotView.m in Sources */,
 				9CA6D0031CC5146B0027D264 /* MeeNavigationController.m in Sources */,
-				9CBB13891CC8A6A900648B85 /* MeePhtViewController.m in Sources */,
 				9C6532D11CC7843800B609C5 /* TAPageControl.m in Sources */,
 				9C6533061CC7868400B609C5 /* UIView+WebCacheOperation.m in Sources */,
 				9C6533041CC7868400B609C5 /* UIImageView+HighlightedWebCache.m in Sources */,

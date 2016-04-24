@@ -9,6 +9,10 @@
 #import "MeePhtViewController.h"
 #import "MeePhoTableViewCell.h"
 
+#import "MeeShowBigPicViewController.h"
+
+//#import "MeeShowPicViewController.h"
+
 @interface MeePhtViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -49,12 +53,27 @@
 #pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 125;
+    return 300;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"选中 ----> %zd",indexPath.row);
+    
+    // 当点击cell modal 感觉要延迟
+    
+    // 自己的做法 ：添加手势;
+    // [self.view.window.rootViewController presentViewController:self animated:YES completion:nil];
+    
+    /*
+    MeePhoTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    MeeShowBigPicViewController *showVc = [[MeeShowBigPicViewController alloc]init];
+    
+    // MeeShowPicViewController *showVc = [[MeeShowPicViewController alloc]init];
+    showVc.picNumOrUrlStr = cell.imageUrls[indexPath.row];
+    [self presentViewController:showVc animated:YES completion:nil];
+     */
+    
 }
 
 

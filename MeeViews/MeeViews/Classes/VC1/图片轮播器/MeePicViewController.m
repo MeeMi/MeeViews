@@ -84,7 +84,7 @@
 #pragma mark - 网络图片轮播器
     // SDCycleScrollView *cycleScrollView2 = [SDCycleScrollView cycleScrollViewWithFrame:<#(CGRect)#> imageURLStringsGroup:<#(NSArray *)#>];
     
-    SDCycleScrollView *cycleScrollView3 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 310, MeeScreenW, 180) delegate:self placeholderImage:[UIImage imageNamed:@"ermilio"]];
+    SDCycleScrollView *cycleScrollView3 = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 310, MeeScreenW, 180) delegate:self placeholderImage:[UIImage imageNamed:@"ermilio.jpg"]];
     // 自定义分组控件小圆圈的颜色
     cycleScrollView3.currentPageDotColor = [UIColor colorWithRed:0.31 green:0.76 blue:0.91 alpha:1.00];
     // 自定义分组控件的图片

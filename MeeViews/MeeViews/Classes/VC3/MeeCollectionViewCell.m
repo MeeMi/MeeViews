@@ -35,7 +35,7 @@
         imageView.frame = self.bounds;
         self.imageView = imageView;
         self.imageView.contentMode = UIViewContentModeScaleAspectFit;
-        [self addSubview:imageView];
+        [self.contentView addSubview:imageView];
     }
     return self;
 }

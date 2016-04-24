@@ -12,4 +12,6 @@
 
 @property (nonatomic, assign) NSIndexPath* indexpath;
 
+@property (nonatomic, strong)  NSArray  * imageUrls;
+
 @end

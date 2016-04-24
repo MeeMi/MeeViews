@@ -13,6 +13,7 @@
 // 通过颜色生产一张图片
 + (instancetype)imageWithColor:(UIColor *)color;
 
-
+// 生产带圆角的图片
+- (UIImage *)drawRoundRectImage;
 
 @end
