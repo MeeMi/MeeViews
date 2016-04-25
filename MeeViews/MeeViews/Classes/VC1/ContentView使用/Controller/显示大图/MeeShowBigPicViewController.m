@@ -14,6 +14,9 @@
 @property (nonatomic, weak) UIScrollView *scrollView; /**< <#注释#> */
 @property (nonatomic, weak) UIImageView *imageView; /**< <#注释#> */
 
+/** 标记属性 */
+@property(nonatomic, assign)BOOL flag;
+
 @end
 
 @implementation MeeShowBigPicViewController
@@ -55,7 +58,12 @@
     [self.view addSubview:btn];
     
     UIImageView *imageView = [[UIImageView alloc]init];
-
+    //设置轻拍手势
+    //首先打开imageView的用户交互,默认是关闭
+    imageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapImageView:)];
+    tapGesture.numberOfTapsRequired = 2;
+    [imageView addGestureRecognizer:tapGesture];
     self.imageView = imageView;
     [self.scrollView insertSubview:self.imageView atIndex:0];
     
@@ -104,6 +112,7 @@
     
     // 设置scrollView内容的范围,使超出了可以滚动
     self.scrollView.contentSize = CGSizeMake(image.size.width, image.size.height);
+
     
     //[self.scrollView addSubview:self.imageView];
     
@@ -153,13 +162,73 @@
     return self.imageView;
 }
 
+//   正在缩放的时候调用 （调用频率非常高）
 - (void)scrollViewDidZoom:(UIScrollView *)scrollView
 {
-    self.imageView.centerX = MeeScreenW * 0.5;
-    self.imageView.centerY = MeeScreenH * 0.5;
+    // 放大缩小图片时候，图片的中心位置设定
+    // 方式一：
+//    self.imageView.centerX = MeeScreenW * 0.5;
+//    self.imageView.centerY = MeeScreenH * 0.5;
     
+    
+    // 方式二：
+    CGFloat t_zs = scrollView.zoomScale;
+    t_zs = MAX(t_zs, 0.9f);
+    t_zs = MIN(t_zs, 5.0f);
+    
+    CGFloat x = scrollView.frame.size.width/2;
+    CGFloat y = scrollView.frame.size.height/2;
+    
+    x = scrollView.contentSize.width > scrollView.frame.size.width? scrollView.contentSize.width/2: x;
+    y = scrollView.contentSize.height > scrollView.frame.size.height? scrollView.contentSize.height/2: y;
+    
+    [self.imageView setCenter:CGPointMake(x, y)];
+    
+    // 方式三：
+//    CGFloat x = scrollView.contentSize.width < scrollView.bounds.size.width ? (scrollView.bounds.size.width - scrollView.contentSize.width) * 0.5 : 0.0;
+//    CGFloat y = scrollView.contentSize.height < scrollView.bounds.size.height ? (scrollView.bounds.size.height - scrollView.contentSize.height) * 0.5 : 0.0;
+//    self.imageView.center = CGPointMake(scrollView.contentSize.width * 0.5 + x, scrollView.contentSize.height * 0.5 + y);
 }
 
+
+//- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(nullable UIView *)view atScale:(CGFloat)scale
+//{
+//    [scrollView setZoomScale:scale+0.01 animated:NO];
+//    [scrollView setZoomScale:scale animated:NO];
+//}
+
+#pragma mark 轻拍方法 - 轻点放大，放大位置不变
+
+- (void)didTapImageView:(UITapGestureRecognizer *)tap
+{
+    //这个是要获取当前点击的小滚动视图,而小滚动视图我们没有设置属性,无法在这儿获取
+    //当前点击视图的父视图,其实就是当前点击的小滚动视图,就通过这种方法获取滚动视图对象
+    UIScrollView *scroll = (UIScrollView *)tap.view.superview;
+    if (_flag == NO) {
+        CGRect newRect = [self zoomRectByScale:2.0 Center:[tap locationInView:tap.view]];
+        //zoomToRect方法是UIScrollVie对象的方法,将图片相对放大
+        [scroll zoomToRect:newRect animated:YES];
+        _flag = YES;
+    }else {
+        [scroll setZoomScale:1 animated:YES];
+        _flag = NO;
+    }
+}
+
+#pragma mark 自定义方法,获取放大后显示的矩形区域
+- (CGRect)zoomRectByScale:(CGFloat)scale Center:(CGPoint)center
+{
+    CGRect zoomRect;
+    //求出新的长和宽
+    zoomRect.size.width = MeeScreenW / scale;
+    zoomRect.size.height = MeeScreenH / scale;
+    
+    //找到新的原点
+    zoomRect.origin.x = center.x * (1 - 1/scale);
+    zoomRect.origin.y = center.y * (1 - 1/scale);
+    
+    return zoomRect;
+}
 
 
 - (void)btnClick

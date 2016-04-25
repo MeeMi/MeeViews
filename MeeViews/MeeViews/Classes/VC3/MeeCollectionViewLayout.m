@@ -53,6 +53,8 @@
  */
 
 
+// 返回rect中的所有的元素的布局属性
+//-返回的是包含UICollectionViewLayoutAttributes的NSArray
 // 初始的layout的外观将由该方法返回的UICollectionViewLayoutAttributes来决定。
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
