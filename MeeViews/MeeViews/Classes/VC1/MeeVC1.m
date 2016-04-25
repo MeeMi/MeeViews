@@ -26,7 +26,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.31 green:0.52 blue:0.34 alpha:1.00];
     
     self.titles = @[@"功能1" , @"功能2" , @"功能3"];
-    self.subTitles = @[@"图片轮播器",@"详细2",@"详细3"];
+    self.subTitles = @[@"图片轮播器",@"storyborad中Container View使用",@"详细3"];
     
     [self setupTableView];
 }
