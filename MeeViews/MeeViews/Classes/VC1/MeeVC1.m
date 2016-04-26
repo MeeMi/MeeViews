@@ -9,10 +9,9 @@
 #import "MeeVC1.h"
 
 #import "MeePicViewController.h"
-
 #import "MeePhtViewController.h"
-
 #import "MeeWaterflowController1.h"
+#import "MeeProViewController.h"
 
 @interface MeeVC1 ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -94,6 +93,14 @@
             break;
         }
         case 3:{
+           
+            break;
+        }
+        case 4:{
+            NSLog(@"选中 4 ");
+            MeeProViewController *vc = [[MeeProViewController alloc]init];
+            vc.title = self.subTitles[4];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         default:
