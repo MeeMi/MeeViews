@@ -12,6 +12,8 @@
 
 #import "MeePhtViewController.h"
 
+#import "MeeWaterflowController1.h"
+
 @interface MeeVC1 ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)  NSArray  * titles;
@@ -25,8 +27,8 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:0.31 green:0.52 blue:0.34 alpha:1.00];
     
-    self.titles = @[@"功能1" , @"功能2" , @"功能3"];
-    self.subTitles = @[@"图片轮播器",@"storyborad中Container View使用",@"详细3"];
+    self.titles = @[@"功能1" , @"功能2" , @"功能3",@"功能4",@"功能5",@"功能6"];
+    self.subTitles = @[@"图片轮播器",@"storyborad中Container View使用",@"瀑布流（一）",@"瀑布流（二）",@"进度条"];
     
     [self setupTableView];
 }
@@ -47,7 +49,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  3;
+    return  5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -86,6 +88,9 @@
         }
         case 2:{
             NSLog(@"选中 2 ");
+            MeeWaterflowController1 *vc = [[MeeWaterflowController1 alloc]init];
+            vc.title = self.subTitles[2];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 3:{

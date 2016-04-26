@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C14EB2B1CCA1199006E15AC /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */; };
+		9C5CE48F1CCF027700EDB54D /* MeeWaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5CE48D1CCF027700EDB54D /* MeeWaterFlowCell.m */; };
+		9C5CE4901CCF027700EDB54D /* MeeWaterFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5CE48E1CCF027700EDB54D /* MeeWaterFlowCell.xib */; };
 		9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */; };
 		9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532901CC7180F00B609C5 /* UIView+Frame.m */; };
 		9C6532961CC71C3000B609C5 /* MeeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532951CC71C3000B609C5 /* MeeCollectionViewCell.m */; };
@@ -89,6 +91,9 @@
 /* Begin PBXFileReference section */
 		9C14EB291CCA1199006E15AC /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
 		9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		9C5CE48C1CCF027700EDB54D /* MeeWaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeWaterFlowCell.h; sourceTree = "<group>"; };
+		9C5CE48D1CCF027700EDB54D /* MeeWaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeWaterFlowCell.m; sourceTree = "<group>"; };
+		9C5CE48E1CCF027700EDB54D /* MeeWaterFlowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeWaterFlowCell.xib; sourceTree = "<group>"; };
 		9C65328B1CC713C800B609C5 /* MeeCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeCollectionViewLayout.h; sourceTree = "<group>"; };
 		9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeCollectionViewLayout.m; sourceTree = "<group>"; };
 		9C65328F1CC7180F00B609C5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -381,6 +386,9 @@
 			children = (
 				9C7161FF1CCE0B13001B5DB2 /* MeeWaterflowController1.h */,
 				9C7162001CCE0B13001B5DB2 /* MeeWaterflowController1.m */,
+				9C5CE48C1CCF027700EDB54D /* MeeWaterFlowCell.h */,
+				9C5CE48D1CCF027700EDB54D /* MeeWaterFlowCell.m */,
+				9C5CE48E1CCF027700EDB54D /* MeeWaterFlowCell.xib */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -692,6 +700,7 @@
 				9C65329A1CC7336800B609C5 /* ermilio.gif in Resources */,
 				9C6532A91CC7501200B609C5 /* joy.gif in Resources */,
 				9CBB139E1CC8D97D00648B85 /* MeePhtViewController.storyboard in Resources */,
+				9C5CE4901CCF027700EDB54D /* MeeWaterFlowCell.xib in Resources */,
 				9C9EABE61CCC9FFA0061754A /* MeeShowPicViewController.xib in Resources */,
 				9C6532B01CC7584000B609C5 /* icon_person.png in Resources */,
 				9CA6CFD51CC513560027D264 /* LaunchScreen.storyboard in Resources */,
@@ -771,6 +780,7 @@
 				9C6533061CC7868400B609C5 /* UIView+WebCacheOperation.m in Sources */,
 				9C6533041CC7868400B609C5 /* UIImageView+HighlightedWebCache.m in Sources */,
 				9C6532D31CC7843800B609C5 /* SDCycleScrollView.m in Sources */,
+				9C5CE48F1CCF027700EDB54D /* MeeWaterFlowCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

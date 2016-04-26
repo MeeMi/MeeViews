@@ -22,7 +22,7 @@
 - (CGFloat)columnCountInWaterflowLayout:(MeeWaterflowLayout *)waterflowLayout;  // 列数
 - (CGFloat)columnMarginInWaterflowLayout:(MeeWaterflowLayout *)waterflowLayout; // 列之间的间距
 - (CGFloat)rowMarginInWaterflowLayout:(MeeWaterflowLayout *)waterflowLayout; // 行之间间距
-- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(MeeWaterflowLayout *)waterflowLayout; // cell的间距
+- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(MeeWaterflowLayout *)waterflowLayout; // 设置CollectionView的内边距
 
 
 @end

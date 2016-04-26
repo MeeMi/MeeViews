@@ -146,7 +146,7 @@ static const UIEdgeInsets MeeDefaultEdgeInsets = {10, 10, 10, 10};
     // 设置cell的 frame
     CGFloat cellW = (collectionViewW - self.edgeInsets.left - self.edgeInsets.right - (self.columnCount - 1) * self.columnMargin) / (self.columnCount);
     // cell的高度是有提供的代理方法 获得的
-    CGFloat cellH = [self.delegate waterflowLayout:self heightForItemAtIndex:indexPath itemWidth:cellW];
+    CGFloat cellH = [self.delegate waterflowLayout:self heightForItemAtIndex:indexPath.item itemWidth:cellW];
     
     
     // 核心关键 - 找出最短那一列
