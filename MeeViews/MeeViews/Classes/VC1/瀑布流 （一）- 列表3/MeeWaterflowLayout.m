@@ -164,6 +164,9 @@ static const UIEdgeInsets MeeDefaultEdgeInsets = {10, 10, 10, 10};
     // 将cell 填补在最短列的下面
     CGFloat x = self.edgeInsets.left + destColumn * (cellW + self.columnMargin);
     CGFloat y = minColumnHeight;
+    if(y != self.edgeInsets.top){
+        y += self.rowMargin;
+    }
     
     attributes.frame = CGRectMake(x, y, cellW, cellH);
     
@@ -171,9 +174,10 @@ static const UIEdgeInsets MeeDefaultEdgeInsets = {10, 10, 10, 10};
     self.columnHeights[destColumn] = @(CGRectGetMaxY(attributes.frame));
     
     // 记录内容的高度
-    
-    
-    
+    CGFloat columnHeight = [self.columnHeights[destColumn]doubleValue];
+    if (self.contentHeight < columnHeight) {
+        self.contentHeight = columnHeight;
+    }
     return attributes;
 }
 
@@ -184,7 +188,15 @@ static const UIEdgeInsets MeeDefaultEdgeInsets = {10, 10, 10, 10};
 // 返回的是包含UICollectionViewLayoutAttributes的NSArray
 - (NSArray *)layoutAttributesForElementsInRect:(CGRect)rect
 {
-    return nil;
+    return self.attrsArray;
 }
+
+
+#pragma mark - 返回滚动范围
+- (CGSize)collectionViewContentSize
+{
+    return CGSizeMake(0, self.contentHeight + self.edgeInsets.bottom);
+}
+
 
 @end
