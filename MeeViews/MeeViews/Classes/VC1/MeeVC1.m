@@ -13,6 +13,8 @@
 #import "MeeWaterflowController1.h"
 #import "MeeProViewController.h"
 
+#import "MeeWaterflowController2.h"
+
 @interface MeeVC1 ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)  NSArray  * titles;
@@ -93,7 +95,10 @@
             break;
         }
         case 3:{
-           
+            NSLog(@"选中 3 ");
+            MeeWaterflowController2 *vc = [[MeeWaterflowController2 alloc]init];
+            vc.title = self.subTitles[3];
+            [self.navigationController pushViewController:vc animated:YES];
             break;
         }
         case 4:{

@@ -22,6 +22,7 @@ static CGFloat const endAngle = M_PI_4;
 @property (nonatomic,weak)NSTimer *timer;
 
 @property (nonatomic, weak)  UIButton  * btn;
+@property (nonatomic, weak)  UILabel  * label;
 
 @end
 
@@ -38,6 +39,15 @@ static CGFloat const endAngle = M_PI_4;
         self.btn = btn;
         [btn addTarget:self action:@selector(startClick) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:btn];
+        
+        
+        UILabel *label  = [[UILabel alloc]init];
+        label.backgroundColor = [UIColor redColor];
+        self.label = label;
+        self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.textColor = [UIColor whiteColor];
+        self.label.text = @"0";
+        [self addSubview:label];
     }
     return self;
 }
@@ -49,6 +59,12 @@ static CGFloat const endAngle = M_PI_4;
     self.btn.height = 30;
     self.btn.centerX = viewW * 0.5;
     self.btn.y = viewH - self.btn.height - 10;
+    
+    self.label.width = 50;
+    self.label.height = 30;
+    self.label.centerX = viewW * 0.5;
+    self.label.centerY = viewH * 0.5;
+    
 
 }
 
@@ -70,9 +86,14 @@ static CGFloat const endAngle = M_PI_4;
 
 - (void)drawBottomView
 {
-    // NSLog(@"打印 ---》");
+    
     // 获取上下文
     CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+
+    
+    // NSLog(@"打印 ---》");
+    
     // 设置线条宽度
     CGContextSetLineWidth(ctx, 10);
     // 设置线条两端的样式    // 设置线条两端样式 kCGLineCapButt(平角), kCGLineCapRound(圆角),kCGLineCapSquare(平角？)
@@ -101,7 +122,6 @@ static CGFloat const endAngle = M_PI_4;
     
     // 绘制
     CGContextStrokePath(ctx);
-    
 }
 
 - (void)drawProView
@@ -124,7 +144,9 @@ static CGFloat const endAngle = M_PI_4;
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
     CGFloat new = [change[NSKeyValueChangeNewKey] doubleValue];
-    NSLog(@"new -----> %1.0f",new);
+    // 打印NSLog比较消耗性能
+    // NSLog(@"new -----> %1.0f",new);
+    self.label.text = [NSString stringWithFormat:@"%1.0f",new];
 }
 
 - (void)startClick
@@ -144,8 +166,8 @@ static CGFloat const endAngle = M_PI_4;
 
 - (void)changeTime
 {
-    self.changeNum += 1;
-    if(_changeNum > 60){
+    self.changeNum += 0.1;
+    if(_changeNum >= 60){
         _changeNum = 0;
     }
     
