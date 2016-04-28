@@ -13,14 +13,21 @@
 
 #import "GreedoCollectionViewLayout.h"
 
+
+// 可拖动
+#import "XWDragCellCollectionView.h"
+
 static NSString *const cellID = @"MeeWaterFlowCell2";
 
-@interface MeeWaterflowController2 ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GreedoCollectionViewLayoutDataSource>
+@interface MeeWaterflowController2 ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GreedoCollectionViewLayoutDataSource,XWDragCellCollectionViewDataSource,XWDragCellCollectionViewDelegate>
 
 // PHFetchResult: 表示一系列的资源集合，也可以是相册的集合
 @property (strong, nonatomic) PHFetchResult *assetFetchResults;
 @property (strong, nonatomic) GreedoCollectionViewLayout *collectionViewSizeCalculator;
 @property (nonatomic, weak)  UICollectionView  * collectionView;
+
+
+@property (nonatomic, strong)  NSMutableArray  * photoes;  // 图片数组
 
 @end
 
@@ -46,7 +53,10 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
 //    UICollectionView *collectionView = [[UICollectionView alloc]init];
 //    collectionView.collectionViewLayout = layout;
     
-    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+//    UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+    
+    XWDragCellCollectionView *collectionView = [[XWDragCellCollectionView alloc]initWithFrame: CGRectZero collectionViewLayout:layout];
+    
     collectionView.frame = self.view.bounds;
     collectionView.backgroundColor = MeeRandomColor;
     
@@ -86,11 +96,10 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
     MeeWaterFlowCell2 *cell = ( MeeWaterFlowCell2 *)[collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     
     // PHAsset: 代表照片库中的一个资源
-    PHAsset *asset = self.assetFetchResults[indexPath.item];
+     PHAsset *asset = self.assetFetchResults[indexPath.item];
     // 配置选项
     // 控制资源的输出尺寸等规格
     // PHImageRequestOptions: 如上面所说，控制加载图片时的一系列参数
-    
     PHImageRequestOptions *options = [PHImageRequestOptions new];
     options.resizeMode = PHImageRequestOptionsResizeModeFast;
     options.deliveryMode = PHImageRequestOptionsDeliveryModeOpportunistic;
@@ -108,6 +117,9 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
                                                        // 移除动画（防止动画被复用）
                                                       [cell.imageView.layer removeAllAnimations];
                                                        cell.imageView.image = result;
+                                                       
+                                                       // 将图片装到数组中
+                                                       [self.photoes addObject:result];
                                                    }];
     
     return cell;
@@ -157,4 +169,39 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
     
     return _collectionViewSizeCalculator;
 }
+
+
+
+# pragma mark - XWDragCellCollectionViewDelegate
+/**
+ *  当数据源更新的到时候调用，必须实现，需将新的数据源设置为当前tableView的数据源(例如 :_data = newDataArray)
+ *  @param newDataArray   更新后的数据源
+ */
+- (void)dragCellCollectionView:(XWDragCellCollectionView *)collectionView newDataArrayAfterMove:(NSArray *)newDataArray
+{
+    self.photoes = [NSMutableArray arrayWithArray:newDataArray];
+}
+
+#pragma mark - XWDragCellCollectionViewDataSource
+/**
+ *  返回整个CollectionView的数据，必须实现，需根据数据进行移动后的数据重排
+ */
+- (NSArray *)dataSourceArrayOfCollectionView:(XWDragCellCollectionView *)collectionView
+{
+    return self.photoes;
+}
+
+
+
+#pragma Mark - 懒加载
+- (NSMutableArray *)photoes
+{
+    if (_photoes == nil) {
+        _photoes = [NSMutableArray array];
+    }
+    return _photoes;
+}
+
+
+
 @end

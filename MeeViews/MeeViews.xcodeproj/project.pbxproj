@@ -11,6 +11,7 @@
 		9C4EC9351CD19DB10017360A /* MeeProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9321CD19DB10017360A /* MeeProgressView.m */; };
 		9C4EC9361CD19DB10017360A /* MeeProViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9341CD19DB10017360A /* MeeProViewController.m */; };
 		9C4EC9391CD19DE90017360A /* GreedoCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9381CD19DE90017360A /* GreedoCollectionViewLayout.m */; };
+		9C4EC93D1CD1EE0D0017360A /* XWDragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC93C1CD1EE0D0017360A /* XWDragCellCollectionView.m */; };
 		9C5CE48F1CCF027700EDB54D /* MeeWaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C5CE48D1CCF027700EDB54D /* MeeWaterFlowCell.m */; };
 		9C5CE4901CCF027700EDB54D /* MeeWaterFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C5CE48E1CCF027700EDB54D /* MeeWaterFlowCell.xib */; };
 		9C65328D1CC713C800B609C5 /* MeeCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C65328C1CC713C800B609C5 /* MeeCollectionViewLayout.m */; };
@@ -103,6 +104,8 @@
 		9C4EC9341CD19DB10017360A /* MeeProViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeProViewController.m; sourceTree = "<group>"; };
 		9C4EC9371CD19DE90017360A /* GreedoCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreedoCollectionViewLayout.h; sourceTree = "<group>"; };
 		9C4EC9381CD19DE90017360A /* GreedoCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreedoCollectionViewLayout.m; sourceTree = "<group>"; };
+		9C4EC93B1CD1EE0D0017360A /* XWDragCellCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDragCellCollectionView.h; sourceTree = "<group>"; };
+		9C4EC93C1CD1EE0D0017360A /* XWDragCellCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDragCellCollectionView.m; sourceTree = "<group>"; };
 		9C5CE48C1CCF027700EDB54D /* MeeWaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeWaterFlowCell.h; sourceTree = "<group>"; };
 		9C5CE48D1CCF027700EDB54D /* MeeWaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeWaterFlowCell.m; sourceTree = "<group>"; };
 		9C5CE48E1CCF027700EDB54D /* MeeWaterFlowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeWaterFlowCell.xib; sourceTree = "<group>"; };
@@ -259,6 +262,16 @@
 			path = "瀑布流（二）- 列表4/进度条";
 			sourceTree = "<group>";
 		};
+		9C4EC93A1CD1B8670017360A /* 拖动 */ = {
+			isa = PBXGroup;
+			children = (
+				9C4EC93B1CD1EE0D0017360A /* XWDragCellCollectionView.h */,
+				9C4EC93C1CD1EE0D0017360A /* XWDragCellCollectionView.m */,
+			);
+			name = "拖动";
+			path = "../瀑布流 （一）- 列表3";
+			sourceTree = "<group>";
+		};
 		9C65328A1CC7139100B609C5 /* CollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,6 +416,7 @@
 		9C7161FC1CCDF17A001B5DB2 /* 瀑布流（二）- 列表4 */ = {
 			isa = PBXGroup;
 			children = (
+				9C4EC93A1CD1B8670017360A /* 拖动 */,
 				9C4EC9371CD19DE90017360A /* GreedoCollectionViewLayout.h */,
 				9C4EC9381CD19DE90017360A /* GreedoCollectionViewLayout.m */,
 				9C15372A1CD0C4DE002FD144 /* MeeWaterFlowCell2.h */,
@@ -784,6 +798,7 @@
 				9CBB13951CC8B6AA00648B85 /* MeePhoTableViewCell.m in Sources */,
 				9C6533011CC7868400B609C5 /* UIImage+GIF.m in Sources */,
 				9C6532FC1CC7868400B609C5 /* SDWebImageDownloader.m in Sources */,
+				9C4EC93D1CD1EE0D0017360A /* XWDragCellCollectionView.m in Sources */,
 				9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */,
 				9C4EC9351CD19DB10017360A /* MeeProgressView.m in Sources */,
 				9C6533051CC7868400B609C5 /* UIImageView+WebCache.m in Sources */,

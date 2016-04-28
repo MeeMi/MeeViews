@@ -10,6 +10,8 @@
 #import "MeeWaterflowLayout.h"
 #import "MeeWaterFlowCell.h"
 
+
+
 static NSString * const cellID = @"MeeWaterFlowCell";
 
 @interface MeeWaterflowController1 ()<UICollectionViewDelegate,UICollectionViewDataSource,MeeWaterflowLayoutDelegate>
@@ -31,6 +33,8 @@ static NSString * const cellID = @"MeeWaterFlowCell";
     
     // 创建CollectionView
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:self.view.bounds collectionViewLayout:layout];
+ 
+    
     collectionView.backgroundColor = MeeRandomColor;
     
     collectionView.delegate = self;
@@ -100,6 +104,7 @@ static NSString * const cellID = @"MeeWaterFlowCell";
 //{
 //    return UIEdgeInsetsMake(20, 10, 30, 15);
 //}
+
 
 
 @end

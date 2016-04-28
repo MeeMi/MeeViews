@@ -19,7 +19,7 @@
         UIImageView *imageView = [[UIImageView alloc]init];
         
         
-        imageView.userInteractionEnabled = YES;
+        // imageView.userInteractionEnabled = YES;
         // 添加手势
         UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPress:)];
         [imageView addGestureRecognizer:longPress];

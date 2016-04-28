@@ -134,14 +134,10 @@ static CGFloat const endAngle = M_PI_4;
     [[UIColor whiteColor]set];
     NSLog(@"self.changeNum====> %1.0f ", self.changeNum);
     
-    // kvo 监听
-    [self addObserver:self forKeyPath:@"changeNum" options:NSKeyValueObservingOptionNew|  NSKeyValueObservingOptionOld context:nil];
-    CGFloat end = -5 * M_PI_4+( 6 * M_PI_4 * self.changeNum/60);
+    CGFloat end = -5 * M_PI_4+( 6 * M_PI_4 * self.changeNum/59);
     CGContextAddArc(ctx, viewW * 0.5, viewH * 0.5, viewW * 0.5 - 10, startAngle, end , 0);
     CGContextStrokePath(ctx);
-    
-    // 移除监听
-    [self removeObserver:self forKeyPath:@"changeNum"];
+
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
@@ -170,9 +166,12 @@ static CGFloat const endAngle = M_PI_4;
 - (void)changeTime
 {
     self.changeNum += 0.1;
-    if(_changeNum >= 60){
+    if(_changeNum > 59){
         _changeNum = 0;
     }
+     // kvo 监听
+    [self addObserver:self forKeyPath:@"changeNum" options:NSKeyValueObservingOptionNew|  NSKeyValueObservingOptionOld context:nil];
+    
     
     // 重绘
     // drawRect不能手动调用,
