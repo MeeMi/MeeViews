@@ -15,7 +15,7 @@
 
 static NSString *const cellID = @"MeeWaterFlowCell2";
 
-@interface MeeWaterflowController2 ()<UICollectionViewDelegate,UICollectionViewDataSource,GreedoCollectionViewLayoutDataSource>
+@interface MeeWaterflowController2 ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GreedoCollectionViewLayoutDataSource>
 
 // PHFetchResult: 表示一系列的资源集合，也可以是相册的集合
 @property (strong, nonatomic) PHFetchResult *assetFetchResults;
@@ -34,17 +34,18 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
 
 - (void)setupCollectionView
 {
-    self.collectionViewSizeCalculator.rowMaximumHeight = CGRectGetHeight(self.collectionView.bounds) / 3;
-
     // 布局
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.minimumLineSpacing = 5;
     layout.minimumInteritemSpacing = 5;
     layout.sectionInset = UIEdgeInsetsMake(10.0f, 5.0f, 5.0f, 5.0f);
+    // 这个方法设置 同意的 UICollectionViewCell的size （可以通过代理方法 设置对应位置上 cell的size）
     // layout.itemSize = CGSizeMake(200, 200);
     
+    // 这样设置layout 报错（？）
 //    UICollectionView *collectionView = [[UICollectionView alloc]init];
 //    collectionView.collectionViewLayout = layout;
+    
     UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
     collectionView.frame = self.view.bounds;
     collectionView.backgroundColor = MeeRandomColor;
@@ -56,6 +57,8 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
     self.collectionView = collectionView;
     [self.view addSubview:collectionView];
     
+    
+    self.collectionViewSizeCalculator.rowMaximumHeight = CGRectGetHeight(self.collectionView.bounds) / 3;
     
     // 获取设备上的所有图片
     [self getAllPhotoFromDevice];
@@ -78,10 +81,9 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
     return self.assetFetchResults.count;
 }
 
-#pragma mark - UICollectionViewDelegate
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    MeeWaterFlowCell2 *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
+    MeeWaterFlowCell2 *cell = ( MeeWaterFlowCell2 *)[collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     
     // PHAsset: 代表照片库中的一个资源
     PHAsset *asset = self.assetFetchResults[indexPath.item];
@@ -103,11 +105,32 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
                                                      contentMode:PHImageContentModeAspectFit
                                                          options:options
                                                    resultHandler:^(UIImage *result, NSDictionary *info) {
-                                                        cell.imageView.image = result;
+                                                       // 移除动画（防止动画被复用）
+                                                      [cell.imageView.layer removeAllAnimations];
+                                                       cell.imageView.image = result;
                                                    }];
-
+    
     return cell;
 }
+
+
+
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"图片 被选择----> %zd",indexPath.item);
+}
+
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+// 代理方法： 设置对应的 indexPath 位置上的 cell的对应的size
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.collectionViewSizeCalculator sizeForPhotoAtIndexPath:indexPath];
+}
+
+
 
 
 #pragma mark - <GreedoCollectionViewLayoutDataSource>

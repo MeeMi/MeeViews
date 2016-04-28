@@ -14,7 +14,7 @@
 
 @property (nonatomic, weak) id <GreedoCollectionViewLayoutDataSource> dataSource;
 @property CGFloat rowMaximumHeight;
-@property CGFloat cellPadding;
+@property BOOL fixedHeight;
 
 - (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 - (CGSize)sizeForPhotoAtIndexPath:(NSIndexPath *)indexPath;
@@ -22,7 +22,6 @@
 - (void)clearCacheAfterIndexPath:(NSIndexPath *)indexPath;
 
 @end
-
 
 // 代理协议
 @protocol GreedoCollectionViewLayoutDataSource <NSObject>
