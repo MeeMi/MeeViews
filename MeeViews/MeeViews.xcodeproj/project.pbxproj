@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9C14EB2B1CCA1199006E15AC /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */; };
+		9C2A67831CE064490008DDD8 /* MeeGestureLockCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A67821CE064490008DDD8 /* MeeGestureLockCollectionView.m */; };
+		9C2A67871CE064AC0008DDD8 /* MeeLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A67861CE064AC0008DDD8 /* MeeLockView.m */; };
+		9C2A678B1CE06A680008DDD8 /* GesturePasswordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A678A1CE06A680008DDD8 /* GesturePasswordButton.m */; };
 		9C4EC9351CD19DB10017360A /* MeeProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9321CD19DB10017360A /* MeeProgressView.m */; };
 		9C4EC9361CD19DB10017360A /* MeeProViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9341CD19DB10017360A /* MeeProViewController.m */; };
 		9C4EC9391CD19DE90017360A /* GreedoCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9381CD19DE90017360A /* GreedoCollectionViewLayout.m */; };
@@ -98,6 +101,12 @@
 		9C14EB2A1CCA1199006E15AC /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
 		9C15372A1CD0C4DE002FD144 /* MeeWaterFlowCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeWaterFlowCell2.h; sourceTree = "<group>"; };
 		9C15372B1CD0C4DE002FD144 /* MeeWaterFlowCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeWaterFlowCell2.m; sourceTree = "<group>"; };
+		9C2A67811CE064490008DDD8 /* MeeGestureLockCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeGestureLockCollectionView.h; sourceTree = "<group>"; };
+		9C2A67821CE064490008DDD8 /* MeeGestureLockCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeGestureLockCollectionView.m; sourceTree = "<group>"; };
+		9C2A67851CE064AC0008DDD8 /* MeeLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeLockView.h; sourceTree = "<group>"; };
+		9C2A67861CE064AC0008DDD8 /* MeeLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeLockView.m; sourceTree = "<group>"; };
+		9C2A67891CE06A680008DDD8 /* GesturePasswordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePasswordButton.h; sourceTree = "<group>"; };
+		9C2A678A1CE06A680008DDD8 /* GesturePasswordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePasswordButton.m; sourceTree = "<group>"; };
 		9C4EC9311CD19DB10017360A /* MeeProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeProgressView.h; sourceTree = "<group>"; };
 		9C4EC9321CD19DB10017360A /* MeeProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeProgressView.m; sourceTree = "<group>"; };
 		9C4EC9331CD19DB10017360A /* MeeProViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeProViewController.h; sourceTree = "<group>"; };
@@ -250,6 +259,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C2A67801CE0639E0008DDD8 /* 手势解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				9C2A67881CE064B00008DDD8 /* View */,
+				9C2A67841CE064610008DDD8 /* CollectionView */,
+			);
+			path = "手势解锁";
+			sourceTree = "<group>";
+		};
+		9C2A67841CE064610008DDD8 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9C2A67811CE064490008DDD8 /* MeeGestureLockCollectionView.h */,
+				9C2A67821CE064490008DDD8 /* MeeGestureLockCollectionView.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		9C2A67881CE064B00008DDD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C2A67891CE06A680008DDD8 /* GesturePasswordButton.h */,
+				9C2A678A1CE06A680008DDD8 /* GesturePasswordButton.m */,
+				9C2A67851CE064AC0008DDD8 /* MeeLockView.h */,
+				9C2A67861CE064AC0008DDD8 /* MeeLockView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		9C4EC9301CD19DB10017360A /* 进度条 */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +596,7 @@
 				9C7161FB1CCDF17A001B5DB2 /* 瀑布流（一）- 列表3 */,
 				9C7161FC1CCDF17A001B5DB2 /* 瀑布流（二）- 列表4 */,
 				9C4EC9301CD19DB10017360A /* 进度条 */,
+				9C2A67801CE0639E0008DDD8 /* 手势解锁 */,
 			);
 			path = VC1;
 			sourceTree = "<group>";
@@ -803,12 +842,14 @@
 				9C4EC9351CD19DB10017360A /* MeeProgressView.m in Sources */,
 				9C6533051CC7868400B609C5 /* UIImageView+WebCache.m in Sources */,
 				9C6533001CC7868400B609C5 /* UIButton+WebCache.m in Sources */,
+				9C2A67831CE064490008DDD8 /* MeeGestureLockCollectionView.m in Sources */,
 				9C6532D41CC7843800B609C5 /* UIView+SDExtension.m in Sources */,
 				9C6532961CC71C3000B609C5 /* MeeCollectionViewCell.m in Sources */,
 				9C6532CF1CC7843800B609C5 /* TAAnimatedDotView.m in Sources */,
 				9C6532D21CC7843800B609C5 /* SDCollectionViewCell.m in Sources */,
 				9C4EC9361CD19DB10017360A /* MeeProViewController.m in Sources */,
 				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
+				9C2A67871CE064AC0008DDD8 /* MeeLockView.m in Sources */,
 				9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */,
 				9C6532FD1CC7868400B609C5 /* SDWebImageDownloaderOperation.m in Sources */,
 				9C7162041CCE0C82001B5DB2 /* MeeWaterflowLayout.m in Sources */,
@@ -826,6 +867,7 @@
 				9C9EABE41CCC9FFA0061754A /* MeeShowBigPicViewController.m in Sources */,
 				9C6532D01CC7843800B609C5 /* TADotView.m in Sources */,
 				9CA6D0031CC5146B0027D264 /* MeeNavigationController.m in Sources */,
+				9C2A678B1CE06A680008DDD8 /* GesturePasswordButton.m in Sources */,
 				9C6532D11CC7843800B609C5 /* TAPageControl.m in Sources */,
 				9C4EC9391CD19DE90017360A /* GreedoCollectionViewLayout.m in Sources */,
 				9C6533061CC7868400B609C5 /* UIView+WebCacheOperation.m in Sources */,

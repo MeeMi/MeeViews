@@ -14,6 +14,7 @@
 #import "MeeProViewController.h"
 
 #import "MeeWaterflowController2.h"
+#import "MeeGestureLockCollectionView.h"
 
 @interface MeeVC1 ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -29,7 +30,7 @@
     self.view.backgroundColor = [UIColor colorWithRed:0.31 green:0.52 blue:0.34 alpha:1.00];
     
     self.titles = @[@"功能1" , @"功能2" , @"功能3",@"功能4",@"功能5",@"功能6"];
-    self.subTitles = @[@"图片轮播器",@"storyborad中Container View使用",@"瀑布流（一）",@"瀑布流（二）",@"进度条"];
+    self.subTitles = @[@"图片轮播器",@"storyborad中Container View使用",@"瀑布流（一）",@"瀑布流（二）",@"进度条",@"手势解锁"];
     
     [self setupTableView];
 }
@@ -50,7 +51,7 @@
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  5;
+    return  self.titles.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +106,13 @@
             NSLog(@"选中 4 ");
             MeeProViewController *vc = [[MeeProViewController alloc]init];
             vc.title = self.subTitles[4];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 5:{
+            NSLog(@"选中 5 ");
+            MeeGestureLockCollectionView *vc = [[MeeGestureLockCollectionView alloc]init];
+            vc.title = self.subTitles[5];
             [self.navigationController pushViewController:vc animated:YES];
             break;
         }
