@@ -13,13 +13,13 @@
 
 #import "GreedoCollectionViewLayout.h"
 
-
+#import "SDPhotoBrowser.h"
 // 可拖动
 #import "XWDragCellCollectionView.h"
 
 static NSString *const cellID = @"MeeWaterFlowCell2";
 
-@interface MeeWaterflowController2 ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GreedoCollectionViewLayoutDataSource,XWDragCellCollectionViewDataSource,XWDragCellCollectionViewDelegate>
+@interface MeeWaterflowController2 ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,GreedoCollectionViewLayoutDataSource,XWDragCellCollectionViewDataSource,XWDragCellCollectionViewDelegate,SDPhotoBrowserDelegate>
 
 // PHFetchResult: 表示一系列的资源集合，也可以是相册的集合
 @property (strong, nonatomic) PHFetchResult *assetFetchResults;
@@ -132,7 +132,32 @@ static NSString *const cellID = @"MeeWaterFlowCell2";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"图片 被选择----> %zd",indexPath.item);
+    SDPhotoBrowser *photoBrowser = [SDPhotoBrowser new];
+    photoBrowser.delegate = self;
+    photoBrowser.currentImageIndex = indexPath.item;
+    photoBrowser.imageCount = self.assetFetchResults.count;
+    photoBrowser.sourceImagesContainerView = self.collectionView;
+    [photoBrowser show];
 }
+
+
+#pragma mark  SDPhotoBrowserDelegate
+
+// 返回临时占位图片（即原来的小图）
+- (UIImage *)photoBrowser:(SDPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
+{
+    // 不建议用此种方式获取小图，这里只是为了简单实现展示而已
+    return self.photoes[index];
+    
+}
+
+
+// 返回高质量图片的url
+- (NSURL *)photoBrowser:(SDPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
+{
+    return nil;
+}
+
 
 
 #pragma mark - UICollectionViewDelegateFlowLayout

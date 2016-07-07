@@ -37,6 +37,7 @@
         if (success) {
             // 设置按钮的边圈颜色
             CGContextSetRGBStrokeColor(context, 16.0/255,93.0/255 ,54.0/255 ,1.0);
+
             // 设置按钮中心点的颜色
             CGContextSetRGBFillColor(context,16.0/255,93.0/255 ,54.0/255 ,1.0);
         }
@@ -50,7 +51,7 @@
         CGContextFillPath(context);
     }
     else{
-        CGContextSetRGBStrokeColor(context, 211/255.f,211/255.f,211/255.f,0.5);//线条颜色
+        CGContextSetRGBStrokeColor(context,0.47,0.47,0.47,0.5);//线条颜色
     }
     
     CGContextSetLineWidth(context,2);
@@ -59,7 +60,7 @@
     CGContextStrokePath(context);
     if (success) {
         // 设置按钮的颜色
-        CGContextSetRGBFillColor(context,16.0/255,93.0/255 ,54.0/255,0.3);
+         CGContextSetRGBFillColor(context,16.0/255,93.0/255 ,54.0/255,0.3);
     }
     else {
         CGContextSetRGBFillColor(context,208/255.f, 36/255.f, 36/255.f,0.3);

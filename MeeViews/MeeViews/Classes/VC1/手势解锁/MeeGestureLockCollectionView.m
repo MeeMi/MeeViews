@@ -26,7 +26,7 @@
     lockView.y = 100;
     lockView.width = MeeScreenW;
     lockView.height = (MeeScreenH - lockView.y * 2);
-    lockView.backgroundColor = [UIColor colorWithRed:0.21 green:0.62 blue:0.44 alpha:1.00];
+    lockView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:lockView];
 }
 

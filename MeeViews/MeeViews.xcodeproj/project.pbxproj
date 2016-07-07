@@ -11,6 +11,9 @@
 		9C2A67831CE064490008DDD8 /* MeeGestureLockCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A67821CE064490008DDD8 /* MeeGestureLockCollectionView.m */; };
 		9C2A67871CE064AC0008DDD8 /* MeeLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A67861CE064AC0008DDD8 /* MeeLockView.m */; };
 		9C2A678B1CE06A680008DDD8 /* GesturePasswordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2A678A1CE06A680008DDD8 /* GesturePasswordButton.m */; };
+		9C475CCF1D0002AC0056ECF9 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C475CC91D0002AC0056ECF9 /* SDBrowserImageView.m */; };
+		9C475CD01D0002AC0056ECF9 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C475CCB1D0002AC0056ECF9 /* SDPhotoBrowser.m */; };
+		9C475CD11D0002AC0056ECF9 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C475CCE1D0002AC0056ECF9 /* SDWaitingView.m */; };
 		9C4EC9351CD19DB10017360A /* MeeProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9321CD19DB10017360A /* MeeProgressView.m */; };
 		9C4EC9361CD19DB10017360A /* MeeProViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9341CD19DB10017360A /* MeeProViewController.m */; };
 		9C4EC9391CD19DE90017360A /* GreedoCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EC9381CD19DE90017360A /* GreedoCollectionViewLayout.m */; };
@@ -107,6 +110,13 @@
 		9C2A67861CE064AC0008DDD8 /* MeeLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeLockView.m; sourceTree = "<group>"; };
 		9C2A67891CE06A680008DDD8 /* GesturePasswordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GesturePasswordButton.h; sourceTree = "<group>"; };
 		9C2A678A1CE06A680008DDD8 /* GesturePasswordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GesturePasswordButton.m; sourceTree = "<group>"; };
+		9C475CC81D0002AC0056ECF9 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		9C475CC91D0002AC0056ECF9 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		9C475CCA1D0002AC0056ECF9 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		9C475CCB1D0002AC0056ECF9 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		9C475CCC1D0002AC0056ECF9 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		9C475CCD1D0002AC0056ECF9 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		9C475CCE1D0002AC0056ECF9 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		9C4EC9311CD19DB10017360A /* MeeProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeProgressView.h; sourceTree = "<group>"; };
 		9C4EC9321CD19DB10017360A /* MeeProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeProgressView.m; sourceTree = "<group>"; };
 		9C4EC9331CD19DB10017360A /* MeeProViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeProViewController.h; sourceTree = "<group>"; };
@@ -288,6 +298,20 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		9C475CC71D0002AC0056ECF9 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				9C475CC81D0002AC0056ECF9 /* SDBrowserImageView.h */,
+				9C475CC91D0002AC0056ECF9 /* SDBrowserImageView.m */,
+				9C475CCA1D0002AC0056ECF9 /* SDPhotoBrowser.h */,
+				9C475CCB1D0002AC0056ECF9 /* SDPhotoBrowser.m */,
+				9C475CCC1D0002AC0056ECF9 /* SDPhotoBrowserConfig.h */,
+				9C475CCD1D0002AC0056ECF9 /* SDWaitingView.h */,
+				9C475CCE1D0002AC0056ECF9 /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
+			sourceTree = "<group>";
+		};
 		9C4EC9301CD19DB10017360A /* 进度条 */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,6 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				9C4EC93A1CD1B8670017360A /* 拖动 */,
+				9C475CC71D0002AC0056ECF9 /* SDPhotoBrowser */,
 				9C4EC9371CD19DE90017360A /* GreedoCollectionViewLayout.h */,
 				9C4EC9381CD19DE90017360A /* GreedoCollectionViewLayout.m */,
 				9C15372A1CD0C4DE002FD144 /* MeeWaterFlowCell2.h */,
@@ -836,6 +861,7 @@
 				9C6533021CC7868400B609C5 /* UIImage+MultiFormat.m in Sources */,
 				9CBB13951CC8B6AA00648B85 /* MeePhoTableViewCell.m in Sources */,
 				9C6533011CC7868400B609C5 /* UIImage+GIF.m in Sources */,
+				9C475CD11D0002AC0056ECF9 /* SDWaitingView.m in Sources */,
 				9C6532FC1CC7868400B609C5 /* SDWebImageDownloader.m in Sources */,
 				9C4EC93D1CD1EE0D0017360A /* XWDragCellCollectionView.m in Sources */,
 				9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */,
@@ -849,6 +875,7 @@
 				9C6532D21CC7843800B609C5 /* SDCollectionViewCell.m in Sources */,
 				9C4EC9361CD19DB10017360A /* MeeProViewController.m in Sources */,
 				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
+				9C475CCF1D0002AC0056ECF9 /* SDBrowserImageView.m in Sources */,
 				9C2A67871CE064AC0008DDD8 /* MeeLockView.m in Sources */,
 				9CA6D0091CC5161B0027D264 /* MeeVC1.m in Sources */,
 				9C6532FD1CC7868400B609C5 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -856,6 +883,7 @@
 				9C14EB2B1CCA1199006E15AC /* UIImage+Tool.m in Sources */,
 				9CBB139A1CC8C54E00648B85 /* MeePhoCollectionViewController.m in Sources */,
 				9CB713CC1CCB99480094497A /* MeePhoCollectionFlowLayout.m in Sources */,
+				9C475CD01D0002AC0056ECF9 /* SDPhotoBrowser.m in Sources */,
 				9C6532A61CC74B4C00B609C5 /* UIImage+GIF.m in Sources */,
 				9CA6CFC71CC513560027D264 /* main.m in Sources */,
 				9C6532FF1CC7868400B609C5 /* SDWebImagePrefetcher.m in Sources */,
