@@ -57,6 +57,13 @@
 		9C6533061CC7868400B609C5 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6532F61CC7868400B609C5 /* UIView+WebCacheOperation.m */; };
 		9C7162011CCE0B13001B5DB2 /* MeeWaterflowController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7162001CCE0B13001B5DB2 /* MeeWaterflowController1.m */; };
 		9C7162041CCE0C82001B5DB2 /* MeeWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7162031CCE0C82001B5DB2 /* MeeWaterflowLayout.m */; };
+		9C7A71CF1D2E2942007CB8A0 /* MeeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A71CD1D2E2942007CB8A0 /* MeeRootViewController.m */; };
+		9C7A71D01D2E2942007CB8A0 /* MeeRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7A71CE1D2E2942007CB8A0 /* MeeRootViewController.xib */; };
+		9C7A71D31D2E3230007CB8A0 /* MeeRootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A71D21D2E3230007CB8A0 /* MeeRootTableViewController.m */; };
+		9C7A71D61D2E55F6007CB8A0 /* MeeRootTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7A71D51D2E55F6007CB8A0 /* MeeRootTableView.m */; };
+		9C80A6EA1D2F91F600DBDDE1 /* MeeChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80A6E91D2F91F600DBDDE1 /* MeeChildViewController.m */; };
+		9C80A6ED1D2F93AB00DBDDE1 /* MeeChild1TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80A6EC1D2F93AB00DBDDE1 /* MeeChild1TableViewController.m */; };
+		9C80A6F01D2F93EA00DBDDE1 /* MeeChild2TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C80A6EF1D2F93EA00DBDDE1 /* MeeChild2TableViewController.m */; };
 		9C98CA451CD0C13300F26815 /* MeeWaterflowController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C98CA441CD0C13300F26815 /* MeeWaterflowController2.m */; };
 		9C9EABDD1CCC9E2F0061754A /* MeePhtViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBB13871CC8A6A900648B85 /* MeePhtViewController.m */; };
 		9C9EABE41CCC9FFA0061754A /* MeeShowBigPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EABE01CCC9FFA0061754A /* MeeShowBigPicViewController.m */; };
@@ -199,6 +206,19 @@
 		9C7162001CCE0B13001B5DB2 /* MeeWaterflowController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeWaterflowController1.m; sourceTree = "<group>"; };
 		9C7162021CCE0C82001B5DB2 /* MeeWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeWaterflowLayout.h; sourceTree = "<group>"; };
 		9C7162031CCE0C82001B5DB2 /* MeeWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeWaterflowLayout.m; sourceTree = "<group>"; };
+		9C7A71CC1D2E2942007CB8A0 /* MeeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeRootViewController.h; sourceTree = "<group>"; };
+		9C7A71CD1D2E2942007CB8A0 /* MeeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeRootViewController.m; sourceTree = "<group>"; };
+		9C7A71CE1D2E2942007CB8A0 /* MeeRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeeRootViewController.xib; sourceTree = "<group>"; };
+		9C7A71D11D2E3230007CB8A0 /* MeeRootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeRootTableViewController.h; sourceTree = "<group>"; };
+		9C7A71D21D2E3230007CB8A0 /* MeeRootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeRootTableViewController.m; sourceTree = "<group>"; };
+		9C7A71D41D2E55F6007CB8A0 /* MeeRootTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeRootTableView.h; sourceTree = "<group>"; };
+		9C7A71D51D2E55F6007CB8A0 /* MeeRootTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeRootTableView.m; sourceTree = "<group>"; };
+		9C80A6E81D2F91F600DBDDE1 /* MeeChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeChildViewController.h; sourceTree = "<group>"; };
+		9C80A6E91D2F91F600DBDDE1 /* MeeChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeChildViewController.m; sourceTree = "<group>"; };
+		9C80A6EB1D2F93AB00DBDDE1 /* MeeChild1TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeChild1TableViewController.h; sourceTree = "<group>"; };
+		9C80A6EC1D2F93AB00DBDDE1 /* MeeChild1TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeChild1TableViewController.m; sourceTree = "<group>"; };
+		9C80A6EE1D2F93EA00DBDDE1 /* MeeChild2TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeChild2TableViewController.h; sourceTree = "<group>"; };
+		9C80A6EF1D2F93EA00DBDDE1 /* MeeChild2TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeChild2TableViewController.m; sourceTree = "<group>"; };
 		9C98CA431CD0C13300F26815 /* MeeWaterflowController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeWaterflowController2.h; sourceTree = "<group>"; };
 		9C98CA441CD0C13300F26815 /* MeeWaterflowController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeeWaterflowController2.m; sourceTree = "<group>"; };
 		9C9EABDF1CCC9FFA0061754A /* MeeShowBigPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeeShowBigPicViewController.h; sourceTree = "<group>"; };
@@ -511,6 +531,49 @@
 			name = Layout;
 			sourceTree = "<group>";
 		};
+		9C7A71C41D2E05B9007CB8A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A71CB1D2E2942007CB8A0 /* MeeRootVC */,
+				9C80A6E71D2F8EE100DBDDE1 /* MeeChildVc */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C7A71C51D2E05B9007CB8A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C7A71CB1D2E2942007CB8A0 /* MeeRootVC */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A71CC1D2E2942007CB8A0 /* MeeRootViewController.h */,
+				9C7A71CD1D2E2942007CB8A0 /* MeeRootViewController.m */,
+				9C7A71CE1D2E2942007CB8A0 /* MeeRootViewController.xib */,
+				9C7A71D11D2E3230007CB8A0 /* MeeRootTableViewController.h */,
+				9C7A71D21D2E3230007CB8A0 /* MeeRootTableViewController.m */,
+				9C7A71D41D2E55F6007CB8A0 /* MeeRootTableView.h */,
+				9C7A71D51D2E55F6007CB8A0 /* MeeRootTableView.m */,
+			);
+			path = MeeRootVC;
+			sourceTree = "<group>";
+		};
+		9C80A6E71D2F8EE100DBDDE1 /* MeeChildVc */ = {
+			isa = PBXGroup;
+			children = (
+				9C80A6E81D2F91F600DBDDE1 /* MeeChildViewController.h */,
+				9C80A6E91D2F91F600DBDDE1 /* MeeChildViewController.m */,
+				9C80A6EB1D2F93AB00DBDDE1 /* MeeChild1TableViewController.h */,
+				9C80A6EC1D2F93AB00DBDDE1 /* MeeChild1TableViewController.m */,
+				9C80A6EE1D2F93EA00DBDDE1 /* MeeChild2TableViewController.h */,
+				9C80A6EF1D2F93EA00DBDDE1 /* MeeChild2TableViewController.m */,
+			);
+			path = MeeChildVc;
+			sourceTree = "<group>";
+		};
 		9C9EABDE1CCC9FFA0061754A /* 显示大图 */ = {
 			isa = PBXGroup;
 			children = (
@@ -632,6 +695,8 @@
 				9CA6D00A1CC516370027D264 /* MeeVC2.h */,
 				9CA6D00B1CC516370027D264 /* MeeVC2.m */,
 				9CA6D00C1CC516370027D264 /* MeeVC2.xib */,
+				9C7A71C41D2E05B9007CB8A0 /* Controller */,
+				9C7A71C51D2E05B9007CB8A0 /* View */,
 			);
 			path = VC2;
 			sourceTree = "<group>";
@@ -810,6 +875,7 @@
 			files = (
 				9C65329A1CC7336800B609C5 /* ermilio.gif in Resources */,
 				9C6532A91CC7501200B609C5 /* joy.gif in Resources */,
+				9C7A71D01D2E2942007CB8A0 /* MeeRootViewController.xib in Resources */,
 				9CBB139E1CC8D97D00648B85 /* MeePhtViewController.storyboard in Resources */,
 				9C5CE4901CCF027700EDB54D /* MeeWaterFlowCell.xib in Resources */,
 				9C9EABE61CCC9FFA0061754A /* MeeShowPicViewController.xib in Resources */,
@@ -854,24 +920,29 @@
 				9C6532B41CC76EFC00B609C5 /* MeeLaunchViewController.m in Sources */,
 				9CA6D0061CC5149E0027D264 /* MeeTabBarController.m in Sources */,
 				9CB713C91CCB8E1D0094497A /* MeePhoCollectionViewCell.m in Sources */,
+				9C80A6F01D2F93EA00DBDDE1 /* MeeChild2TableViewController.m in Sources */,
 				9CA6CFFF1CC513F50027D264 /* AppDelegate.m in Sources */,
 				9C6532BC1CC77C7600B609C5 /* MeePicViewController.m in Sources */,
 				9C6532FA1CC7868400B609C5 /* SDWebImageCompat.m in Sources */,
 				9C6532F91CC7868400B609C5 /* SDImageCache.m in Sources */,
 				9C6533021CC7868400B609C5 /* UIImage+MultiFormat.m in Sources */,
 				9CBB13951CC8B6AA00648B85 /* MeePhoTableViewCell.m in Sources */,
+				9C7A71CF1D2E2942007CB8A0 /* MeeRootViewController.m in Sources */,
 				9C6533011CC7868400B609C5 /* UIImage+GIF.m in Sources */,
 				9C475CD11D0002AC0056ECF9 /* SDWaitingView.m in Sources */,
 				9C6532FC1CC7868400B609C5 /* SDWebImageDownloader.m in Sources */,
 				9C4EC93D1CD1EE0D0017360A /* XWDragCellCollectionView.m in Sources */,
 				9C6532911CC7180F00B609C5 /* UIView+Frame.m in Sources */,
+				9C80A6EA1D2F91F600DBDDE1 /* MeeChildViewController.m in Sources */,
 				9C4EC9351CD19DB10017360A /* MeeProgressView.m in Sources */,
 				9C6533051CC7868400B609C5 /* UIImageView+WebCache.m in Sources */,
 				9C6533001CC7868400B609C5 /* UIButton+WebCache.m in Sources */,
+				9C7A71D61D2E55F6007CB8A0 /* MeeRootTableView.m in Sources */,
 				9C2A67831CE064490008DDD8 /* MeeGestureLockCollectionView.m in Sources */,
 				9C6532D41CC7843800B609C5 /* UIView+SDExtension.m in Sources */,
 				9C6532961CC71C3000B609C5 /* MeeCollectionViewCell.m in Sources */,
 				9C6532CF1CC7843800B609C5 /* TAAnimatedDotView.m in Sources */,
+				9C80A6ED1D2F93AB00DBDDE1 /* MeeChild1TableViewController.m in Sources */,
 				9C6532D21CC7843800B609C5 /* SDCollectionViewCell.m in Sources */,
 				9C4EC9361CD19DB10017360A /* MeeProViewController.m in Sources */,
 				9CA6D00D1CC516370027D264 /* MeeVC2.m in Sources */,
@@ -903,6 +974,7 @@
 				9C6532D31CC7843800B609C5 /* SDCycleScrollView.m in Sources */,
 				9C5CE48F1CCF027700EDB54D /* MeeWaterFlowCell.m in Sources */,
 				9C98CA451CD0C13300F26815 /* MeeWaterflowController2.m in Sources */,
+				9C7A71D31D2E3230007CB8A0 /* MeeRootTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

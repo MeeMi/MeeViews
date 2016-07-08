@@ -46,11 +46,11 @@
 //    vc2.tabBarItem.image = [UIImage imageNamed:@"js"];
 //    [self addChildViewController:nav2];
     
-     MeeVC1 *vc1 = [[MeeVC1 alloc]init];
-    [self setupOneChildVc:vc1 andImage:@"tab_home_icon" andTitle:@"功能列表"];
-    
     MeeVC2 *vc2 = [[MeeVC2 alloc]init];
     [self setupOneChildVc:vc2 andImage:@"js" andTitle:@"vc2"];
+    
+     MeeVC1 *vc1 = [[MeeVC1 alloc]init];
+    [self setupOneChildVc:vc1 andImage:@"tab_home_icon" andTitle:@"功能列表"];
     
     
     MeeVC3 *vc3 = [[MeeVC3 alloc]init];
