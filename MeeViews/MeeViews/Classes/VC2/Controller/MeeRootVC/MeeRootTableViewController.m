@@ -39,7 +39,9 @@
     
     self.lastOffsetY = - (MeeHeadViewH + MeeTabBarH);
     
+    // 让tableView的宽度和高度适应父控件
     self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
     // 设置tableView 滚动的范围
     self.tableView.contentInset = UIEdgeInsetsMake(MeeHeadViewH + MeeTabBarH, 0, 0, 0);
     
