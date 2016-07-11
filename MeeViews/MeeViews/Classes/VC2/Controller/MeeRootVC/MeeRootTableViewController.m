@@ -26,11 +26,12 @@
     // 替换点原来的 tableView
     MeeRootTableView *meeTableView = [[MeeRootTableView alloc]init];
     meeTableView.frame = [UIScreen mainScreen].bounds;
+    
     meeTableView.delegate = self;
     meeTableView.dataSource = self;
     self.tableView = meeTableView;
     self.view = meeTableView;
-    meeTableView.autoresizingMask = UIViewAutoresizingNone;
+
 }
 
 - (void)viewDidLoad {
@@ -38,6 +39,7 @@
     
     self.lastOffsetY = - (MeeHeadViewH + MeeTabBarH);
     
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     // 设置tableView 滚动的范围
     self.tableView.contentInset = UIEdgeInsetsMake(MeeHeadViewH + MeeTabBarH, 0, 0, 0);
     

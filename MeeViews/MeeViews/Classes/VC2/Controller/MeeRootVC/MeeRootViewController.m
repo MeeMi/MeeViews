@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
 @property (weak, nonatomic) IBOutlet UIView *contentView;/** 子控制内容View */
 
+@property (nonatomic, weak) UIView *titleIndicatorView; /**< 指示器view */
+
 // 顶部图片的高度约束
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *headerViewHeightCons;
 
@@ -31,6 +33,8 @@
 
 @implementation MeeRootViewController
 
+
+// 重写这，当子控制集成父控子器时。显示的界面效果和父控制器是一样的.因为父控制器界面使用xib做的，需要重写这个方法
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     if (self = [super initWithNibName:@"MeeRootViewController" bundle:nibBundleOrNil]) {
@@ -45,6 +49,7 @@
     self.view.backgroundColor = MeeRandomColor;
     // 不自动添加额外滚动区域
     self.automaticallyAdjustsScrollViewInsets = NO;
+    
     
     // 接受按钮的点击通知
     [[NSNotificationCenter defaultCenter]addObserverForName:MeeClickBtnNote object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
@@ -144,6 +149,21 @@
         
         [self.tabBarView addSubview:btn];
     }
+    
+    
+    // 创建指示器View
+    UIView *titleIndicatorView = [[UIView alloc]init];
+    // 获取第一个按钮
+    UIButton *firstBtn = self.tabBarView.subviews.firstObject;
+    
+    self.titleIndicatorView = titleIndicatorView;
+    titleIndicatorView.y = CGRectGetMaxY(self.tabBarView.frame);
+    titleIndicatorView.height = 1;
+    titleIndicatorView.centerX = firstBtn.centerX;
+    titleIndicatorView.backgroundColor = [firstBtn titleColorForState:UIControlStateSelected];
+    [self.view addSubview:titleIndicatorView];
+    
+    
 }
 
 - (void)btnClick:(UIButton *)btn
@@ -170,6 +190,11 @@
     // 设置tableView的滚动区域
     // contentOffset 属性用来表示UIScrollView滚动的位置
     tableViewVc.tableView.contentOffset = lastTableView.contentOffset;
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        self.titleIndicatorView.centerX = btn.centerX;
+    }];
+    
 }
 
 // 控制器View改变调用
@@ -190,6 +215,9 @@
         UIView *childBtn = self.tabBarView.subviews[i];
         childBtn.frame = CGRectMake(btnX, btnY, btnW, btnH);
     }
+    
+    
+    self.titleIndicatorView.width = btnW;
 }
 
 - (void)dealloc
